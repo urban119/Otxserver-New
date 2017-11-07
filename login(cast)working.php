@@ -124,11 +124,23 @@ $world = array(
     "anticheatprotection" => false
 );
 
+$survey = array(
+	"id": rand(0, 999999),
+	"invitationtext": "Querido tibiano, obrigado por usar OTX, a base mais atualizada do Tibia Global.\n'Mensagem dita por Cjaker'.",
+	"invitationtoken": "1751f1beddf001e1d36dee78ace974",
+	"endtimestamp": 1510614000
+);
+
+// https://limesurvey.cipsoft.com/index.php/survey/index/sid/527875/lang-en?token=1751f1beddf001e1d36dee78ace974
+// token=invitationtoken
+// o endtimestamp acima é o tempo convertido em unix timestamp, onde o mesmo é o prazo que irá acabar o survey!
+
 $worlds = array($world);
 
 $data["session"] = $session;
 $playerData["worlds"] = $worlds;
 $playerData["characters"] = $characters;
 $data["playdata"] = $playerData;
+$data["survey"] = $survey;
 
 echo json_encode($data);
