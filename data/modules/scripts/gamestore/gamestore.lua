@@ -21,8 +21,7 @@ GameStore.Categories = {
 			{name = "Permanent Prey Slot", state = GameStore.States.STATE_NEW, type = GameStore.OfferTypes.OFFER_TYPE_PREYSLOT, price = 450, icons = {"preypermanet.png"}},
 		}
 	},
-	
-		{
+	{
 		name = "Premium Time",
 		state = GameStore.States.STATE_SALVE,
 		rookgaard = false,
@@ -34,7 +33,6 @@ GameStore.Categories = {
 			{name = "360 Days of Premium Time", price = 1000, state = GameStore.States.STATE_SALE, validUntil = 30, thingId = 360, type = GameStore.OfferTypes.OFFER_TYPE_PREMIUM, icons = {"Product_PremiumTime360.png"}, description = "Premium Account for 180 days."}
 		}
 	},
-	
 	{
 		name = "Extra Services",
 		state = GameStore.States.STATE_NONE,
@@ -46,7 +44,6 @@ GameStore.Categories = {
 			{name = "Character Sex Change", type = GameStore.OfferTypes.OFFER_TYPE_SEXCHANGE, price = 120, icons = {"sexchanger.png"}},
 		}
 	},
-	
 	{
 		name = "Blessings",
 		state = GameStore.States.STATE_NONE,
@@ -64,7 +61,6 @@ GameStore.Categories = {
 			{name = "Blood of the Mountain", thingId = 8, type = GameStore.OfferTypes.OFFER_TYPE_BLESSINGS, price = 10, icons = {"Product_Blessing_BloodOfTheMountain.png"}},
 		}
 	},
-	
 	{
 		name = "Potions & Kegs",
 		state = GameStore.States.STATE_NONE,
@@ -95,22 +91,21 @@ GameStore.Categories = {
 			{name = "Ultimate Mana Keg", type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE, price = 15, thingId = 28587, count = 500, icons = {"Ultimate_Mana_Keg.png"}},
 			{name = "Ultimate Spirit Keg", type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE, price = 15, thingId = 28590, count = 500, icons = {"Ultimate_Ultimate_Spirit_Keg.png"}},
 			{name = "Health Cask", thingId = 28555, count = 1000, type = GameStore.OfferTypes.OFFER_TYPE_HOUSE, price = 4, icons = {"Health_Cask.png"}},
-            {name = "Strong Health Cask", thingId = 28556, count = 1000, type = GameStore.OfferTypes.OFFER_TYPE_HOUSE, price = 9, icons = {"Strong_Health_Cask.png"}},
-            {name = "Great Health Cask", thingId = 28557, count = 1000, type = GameStore.OfferTypes.OFFER_TYPE_HOUSE, price = 18, icons = {"Great_Health_Cask.png"}},
-            {name = "Ultimate Health Cask", thingId = 28558, count = 1000, type = GameStore.OfferTypes.OFFER_TYPE_HOUSE, price = 29, icons = {"Ultimate_Health_Cask.png"}},
-            {name = "Supreme Health Cask", thingId = 28559, count = 1000, type = GameStore.OfferTypes.OFFER_TYPE_HOUSE, price = 47, icons = {"Supreme_Health_Cask.png"}},
-            {name = "Mana Cask", thingId = 28565, count = 1000, type = GameStore.OfferTypes.OFFER_TYPE_HOUSE, price = 4, icons = {"Mana_Cask.png"}},
-            {name = "Strong Mana Cask", thingId = 28566, count = 1000, type = GameStore.OfferTypes.OFFER_TYPE_HOUSE, price = 7, icons = {"Strong_Mana_Cask.png"}},
-            {name = "Great Mana Cask", thingId = 28567, count = 1000, type = GameStore.OfferTypes.OFFER_TYPE_HOUSE, price = 11, icons = {"Great_Mana_Cask.png"}},
-            {name = "Ultimate Mana Cask", thingId = 28568, count = 1000, type = GameStore.OfferTypes.OFFER_TYPE_HOUSE, price = 33, icons = {"Ultimate_Mana_Cask.png"}},
-            {name = "Great Spirit Cask", thingId = 28576, count = 1000, type = GameStore.OfferTypes.OFFER_TYPE_HOUSE, price = 18, icons = {"Great_Spirit_Cask.png"}},
+			{name = "Strong Health Cask", thingId = 28556, count = 1000, type = GameStore.OfferTypes.OFFER_TYPE_HOUSE, price = 9, icons = {"Strong_Health_Cask.png"}},
+			{name = "Great Health Cask", thingId = 28557, count = 1000, type = GameStore.OfferTypes.OFFER_TYPE_HOUSE, price = 18, icons = {"Great_Health_Cask.png"}},
+			{name = "Ultimate Health Cask", thingId = 28558, count = 1000, type = GameStore.OfferTypes.OFFER_TYPE_HOUSE, price = 29, icons = {"Ultimate_Health_Cask.png"}},
+			{name = "Supreme Health Cask", thingId = 28559, count = 1000, type = GameStore.OfferTypes.OFFER_TYPE_HOUSE, price = 47, icons = {"Supreme_Health_Cask.png"}},
+			{name = "Mana Cask", thingId = 28565, count = 1000, type = GameStore.OfferTypes.OFFER_TYPE_HOUSE, price = 4, icons = {"Mana_Cask.png"}},
+			{name = "Strong Mana Cask", thingId = 28566, count = 1000, type = GameStore.OfferTypes.OFFER_TYPE_HOUSE, price = 7, icons = {"Strong_Mana_Cask.png"}},
+			{name = "Great Mana Cask", thingId = 28567, count = 1000, type = GameStore.OfferTypes.OFFER_TYPE_HOUSE, price = 11, icons = {"Great_Mana_Cask.png"}},
+			{name = "Ultimate Mana Cask", thingId = 28568, count = 1000, type = GameStore.OfferTypes.OFFER_TYPE_HOUSE, price = 33, icons = {"Ultimate_Mana_Cask.png"}},
+			{name = "Great Spirit Cask", thingId = 28576, count = 1000, type = GameStore.OfferTypes.OFFER_TYPE_HOUSE, price = 18, icons = {"Great_Spirit_Cask.png"}},
 		}
 	},
-
 	{
 		name = "Runes",
 		state = GameStore.States.STATE_NONE,
-        description = "Buy magically filled runes to unleash their energy when in need of it.",
+		description = "Buy magically filled runes to unleash their energy when in need of it.",
 		rookgaard = false,
 		icons = {"Category_Runes.png"},
 		offers = {
@@ -143,7 +138,6 @@ GameStore.Categories = {
 			{name = "Wild Growth Rune", price = 10, type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE, thingId = 2269, count = 250, icons = {"Product_Rune_WildGrowthRune.png"}},
 		}
 	},
-	
 	{
 		name = "Mounts",
 		state = GameStore.States.STATE_NONE,
@@ -223,11 +217,10 @@ GameStore.Categories = {
 			{name = "Snow Pelt", thingId = 102, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 750, icons = {"Category_Mounts_snowpelt.png"}},
 		}
 	},
-
 	{
 		name = "Outfits",
 		state = GameStore.States.STATE_NONE,
-	    description = "Buy your character one more of the classy outfits offered here.",
+		description = "Buy your character one more of the classy outfits offered here.",
 		icons = {"Category_Outfits.png"},
 		rookgaard = true,
 		offers = {
@@ -240,10 +233,10 @@ GameStore.Categories = {
 			{name = "Retro Summoner", thingId = {male=964,female=965}, type = GameStore.OfferTypes.OFFER_TYPE_OUTFIT, price = 870, icons = {"Product_Outfit_RetroSummoner_Male_Base.png", "Product_Outfit_RetroSummoner_Female_Base.png"}},
 			{name = "Retro Warrior", thingId = {male=962,female=963}, type = GameStore.OfferTypes.OFFER_TYPE_OUTFIT, price = 870, icons = {"Product_Outfit_RetroWarrior_Male_Base.png", "Product_Outfit_RetroWarrior_Female_Base.png"}},
 			--Arena Champion
-			{ name = "Full Arena Champion Outfit", thingId = { male = 884, female = 885 }, addon = 3, type = GameStore.OfferTypes.OFFER_TYPE_OUTFIT, price = 870, icons = {"Product_Outfit_ArenaChampion_Male_Full.png", "Product_Outfit_ArenaChampion_Female_Full.png"}},
-            { name = "Arena Champion Outfit", thingId = { male = 884, female = 885 }, type = GameStore.OfferTypes.OFFER_TYPE_OUTFIT, price = 690, icons = {"Product_Outfit_ArenaChampion_Male_Base.png", "Product_Outfit_ArenaChampion_Female_Base.png"}},
-            { name = "Arena Champion Outfit Addon 1", thingId = { male = 884, female = 885 }, addon = 2, type = GameStore.OfferTypes.OFFER_TYPE_OUTFIT_ADDON, price = 120, icons = {"Product_Outfit_Beastmaster_Male_Addon1.png", "Product_Outfit_Beastmaster_Female_Addon1.png"}},
-            { name = "Arena Champion Outfit Addon 2", thingId = { male = 884, female = 885 }, addon = 1, type = GameStore.OfferTypes.OFFER_TYPE_OUTFIT_ADDON, price = 120, icons = {"Product_Outfit_Beastmaster_Male_Addon2.png", "Product_Outfit_Beastmaster_Female_Addon2.png"}},
+			{name = "Full Arena Champion Outfit", thingId = { male = 884, female = 885 }, addon = 3, type = GameStore.OfferTypes.OFFER_TYPE_OUTFIT, price = 870, icons = {"Product_Outfit_ArenaChampion_Male_Full.png", "Product_Outfit_ArenaChampion_Female_Full.png"}},
+			{name = "Arena Champion Outfit", thingId = { male = 884, female = 885 }, type = GameStore.OfferTypes.OFFER_TYPE_OUTFIT, price = 690, icons = {"Product_Outfit_ArenaChampion_Male_Base.png", "Product_Outfit_ArenaChampion_Female_Base.png"}},
+			{name = "Arena Champion Outfit Addon 1", thingId = { male = 884, female = 885 }, addon = 2, type = GameStore.OfferTypes.OFFER_TYPE_OUTFIT_ADDON, price = 120, icons = {"Product_Outfit_Beastmaster_Male_Addon1.png", "Product_Outfit_Beastmaster_Female_Addon1.png"}},
+			{name = "Arena Champion Outfit Addon 2", thingId = { male = 884, female = 885 }, addon = 1, type = GameStore.OfferTypes.OFFER_TYPE_OUTFIT_ADDON, price = 120, icons = {"Product_Outfit_Beastmaster_Male_Addon2.png", "Product_Outfit_Beastmaster_Female_Addon2.png"}},
 			--Philosopher
 			{name = "Full Philosopher Outfit", thingId = {male=873,female=874}, addon = 3, type = GameStore.OfferTypes.OFFER_TYPE_OUTFIT, price = 750, icons = {"Product_Outfit_Professor_Male_Full.png", "Product_Outfit_Professor_Female_Full.png"}},
 			{name = "Philosopher Outfit", thingId = {male=873,female=874}, type = GameStore.OfferTypes.OFFER_TYPE_OUTFIT, price = 570, icons = {"Product_Outfit_Professor_Male_Base.png", "Product_Outfit_Professor_Female_Base.png"}},
@@ -326,7 +319,6 @@ GameStore.Categories = {
 			{name = "Pharaoh Outfit Addon 2", thingId = {male=955,female=956}, addon = 2, type = GameStore.OfferTypes.OFFER_TYPE_OUTFIT_ADDON, price = 120, icons = {"Product_Outfit_Pharaoh_Male_Addon1_.png", "Product_Outfit_Pharaoh_Female_Addon2_.png"}},
 		}
 	},
-	
 	{
 		name = "House Equipment",
 		state = GameStore.States.STATE_NONE,
@@ -395,7 +387,6 @@ GameStore.Categories = {
 		{name = "Brocade Tapestry", description = "Buy an incredible Brocade Tapestry to decorate your home.", type = GameStore.OfferTypes.OFFER_TYPE_HOUSE, thingId = 26381, count = 1, price = 50, icons = {"Product_HouseEquipment_Tapestry_06.png"}},
 			}
 	},
-
 	{
 		name = "XP Boost",
 		state = GameStore.States.STATE_NONE,
@@ -406,11 +397,10 @@ GameStore.Categories = {
 			{name = "XP Boost 50%", type = GameStore.OfferTypes.OFFER_TYPE_EXPBOOST, price = 30, icons = {"xpboosticon.png"}},
 		}
 	},
-	
 	{
 		name = "Useful Things",
 		state = GameStore.States.STATE_NONE,
-        description = "Buy your character one or more of the helpful items offered here.",
+		description = "Buy your character one or more of the helpful items offered here.",
 		rookgaard = true,
 		icons = {"Category_Convenience.png"},
 		offers = {
@@ -421,7 +411,6 @@ GameStore.Categories = {
 			{name = "Gold Pounch", thingId = 26377, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 900, icons = {"Product_MagicCoinPurse.png"}, description = "With Gold Pounch you can carry the amount of gold without having to keep many knapsacks in the backpack, this product allows you to be charged as much gold as your ability allows."},
 		}
 	},
-	
 }
 
 -- Non-Editable
@@ -431,7 +420,7 @@ for k, category in ipairs(GameStore.Categories) do
 		for m, offer in ipairs(category.offers) do
 			offer.id = runningId
 			runningId = runningId + 1
-			
+
 			if not offer.type then
 				offer.type = GameStore.OfferTypes.OFFER_TYPE_NONE
 			end
