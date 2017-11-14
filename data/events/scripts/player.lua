@@ -242,6 +242,12 @@ local function antiPush(self, item, count, fromPosition, toPosition, fromCylinde
 end
 
 function Player:onMoveItem(item, count, fromPosition, toPosition, fromCylinder, toCylinder)
+	-- No move if item count > 20 items
+	local tile = Tile(toPosition)
+	if tile and tile:getItemCount() > 20 then
+		self:sendCancelMessage(RETURNVALUE_NOTPOSSIBLE)
+		return false
+	end
 	--- LIONS ROCK START 
 	if self:getStorageValue(lionrock.storages.playerCanDoTasks) - os.time() < 0 then
 		local p, i = lionrock.positions, lionrock.items
@@ -450,12 +456,6 @@ function Player:onMoveItem(item, count, fromPosition, toPosition, fromCylinder, 
 	-- No move parcel very heavy
 	if item:getWeight() > 90000 and item:getId() == ITEM_PARCEL then
 		self:sendCancelMessage('YOU CANNOT MOVE PARCELS TOO HEAVY.')
-		return false
-	end
-
-	-- No move if item count > 20 items
-	if tile and tile:getItemCount() > 20 then
-		self:sendCancelMessage(RETURNVALUE_NOTPOSSIBLE)
 		return false
 	end
 
