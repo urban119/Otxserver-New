@@ -12,7 +12,7 @@ Temos uma Wiki explicando como compilar o servidor  [OTXServer Wiki](https://git
 
 Video criando cliente com ip [Próprio](https://www.youtube.com/watch?v=AsZIpPytDb8)
 
-Video COMPILANDO O [OTX](https://youtu.be/LPMrc08xlaw))
+Video COMPILANDO O [OTX](https://youtu.be/LPMrc08xlaw)
 
 Turorial rapido, extraia essa pasta em HTDOCS(xampp), pronto vai estar sincronizado suas imagens com a store, claro se vocÊ usar local- host, se for ip também ira funcionar.
 [Imagens Store](http://www.mediafire.com/file/jf8abs8z9h9i2h8/store.rar)
