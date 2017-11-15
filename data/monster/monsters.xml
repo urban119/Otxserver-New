@@ -356,6 +356,8 @@
 	<monster name="Big Boss Trolliver" file="Bosses/big_boss_trolliver.xml" />
 	<monster name="Bones" file="Bosses/bones.xml" />
 	<monster name="Boogey" file="Bosses/boogey.xml" />
+	<monster name="Bretzecutioner" file="Bosses/bretzecutioner.xml" />
+	<monster name="Bruise Payne" file="Bosses/bruise payne.xml" />
 	<monster name="Brutus Bloodbeard" file="Bosses/brutus_bloodbeard.xml" />
 	<monster name="Chizzoron the Distorter" file="Bosses/chizzoron_the_distorter.xml" />
 	<monster name="Coldheart" file="Bosses/coldheart.xml" />
@@ -375,13 +377,17 @@
 	<monster name="Dreadwing" file="Bosses/dreadwing.xml" />
 	<monster name="Energized Raging Mage" file="Bosses/energized_raging_mage.xml" />
 	<monster name="Esmeralda" file="Bosses/esmeralda.xml" />
+	<monster name="Ethershreck" file="Bosses/ethershreck.xml" />
 	<monster name="Evil Mastermind" file="Bosses/evil_mastermind.xml" />
 	<monster name="Fatality" file="Bosses/fatality.xml" />
+	<monster name="Fazzrah" file="Bosses/fazzrah.xml" />
 	<monster name="Fernfang" file="Bosses/fernfang.xml" />
 	<monster name="Ferumbras" file="Bosses/ferumbras.xml" />
 	<monster name="Ferumbras Essence" file="Bosses/Ferumbras Essence.xml" />
 	<monster name="Ferumbras Mortal Shell" file="Bosses/Ferumbras Mortal Shell.xml" />
 	<monster name="Ferumbras Soul Splinter" file="Bosses/Ferumbras Soul Splinter.xml" />
+	<monster name="Flameborn" file="Bosses/flameborn.xml" />
+	<monster name="Fleshcrawler" file="Bosses/fleshcrawler.xml" />
 	<monster name="Fleshslicer" file="Bosses/fleshslicer.xml" />
 	<monster name="Fluffy" file="Bosses/fluffy.xml" />
 	<monster name="Foreman Kneebiter" file="Bosses/foreman_kneebiter.xml" />
@@ -396,9 +402,11 @@
 	<monster name="Grand Mother Foulscale" file="Bosses/grand_mother_foulscale.xml" />
 	<monster name="Groam" file="Bosses/groam.xml" />
 	<monster name="Grorlam" file="Bosses/grorlam.xml" />
+	<monster name="Gorgo" file="Bosses/gorgo.xml" />
 	<monster name="Hairman the Huge" file="Bosses/hairman_the_huge.xml" />
 	<monster name="Haunter" file="Bosses/haunter.xml" />
 	<monster name="Hellgorak" file="Bosses/hellgorak.xml" />
+	<monster name="Hemming" file="Bosses/hemming.xml" />
 	<monster name="Heoni" file="Bosses/heoni.xml" />
 	<monster name="Hide" file="Bosses/hide.xml" />
 	<monster name="Horestis" file="Bosses/horestis.xml" />
@@ -406,6 +414,7 @@
 	<monster name="Infernatil" file="Bosses/infernatil.xml" />
 	<monster name="Inky" file="Bosses/inky.xml" />
 	<monster name="Jaul" file="Bosses/jaul.xml" />
+	<monster name="Kerberos" file="Bosses/kerberos.xml" />
 	<monster name="Koshei The Deathless" file="Bosses/koshei_the_deathless.xml" />
 	<monster name="Kraknaknork's Demon" file="Bosses/kraknaknork's_demon.xml" />
 	<monster name="Kraknaknork" file="Bosses/kraknaknork.xml" />
@@ -432,8 +441,10 @@
 	<monster name="Necropharus" file="Bosses/necropharus.xml" />
 	<monster name="Obujos" file="Bosses/obujos.xml" />
 	<monster name="Orshabaal" file="Bosses/orshabaal.xml" />
+	<monster name="Paiz the Pauperizer" file="Bosses/paiz the pauperizer.xml" />
 	<monster name="Pythius The Rotten" file="Bosses/pythius_the_rotten.xml" />
 	<monster name="Raging Mage" file="Bosses/raging_mage.xml" />
+	<monster name="Ribstride" file="Bosses/ribstride.xml" />
 	<monster name="Rocko" file="Bosses/rocko.xml" />
 	<monster name="Ron the Ripper" file="Bosses/ron_the_ripper.xml" />
 	<monster name="Rottie the Rotworm" file="Bosses/rottie_the_rotworm.xml" />
@@ -448,6 +459,7 @@
 	<monster name="Spite of the Emperor" file="Bosses/spite_of_the_emperor.xml" />
 	<monster name="Splasher" file="Bosses/splasher.xml" />
 	<monster name="Stonecracker" file="Bosses/stonecracker.xml" />
+	<monster name="Sulphur Scuttler" file="Bosses/sulphur scuttler.xml" />
 	<monster name="Tanjis" file="Bosses/tanjis.xml" />
 	<monster name="Terofar" file="Bosses/terofar.xml" />
 	<monster name="The Abomination" file="Bosses/the_abomination.xml" />
@@ -473,7 +485,9 @@
 	<monster name="Thul" file="Bosses/thul.xml" />
 	<monster name="Tiquandas Revenge" file="Bosses/tiquandas_revenge.xml" />
 	<monster name="Tirecz" file="Bosses/tirecz.xml" />
+	<monster name="Tormentor" file="Bosses/tormentor.xml" />
 	<monster name="Tremorak" file="Bosses/tremorak.xml" />
+	<monster name="Tromphonyte" file="Bosses/tromphonyte.xml" />
 	<monster name="Ungreez" file="Bosses/ungreez.xml" />
 	<monster name="Ushuriel" file="Bosses/ushuriel.xml" />
 	<monster name="Verminor" file="Bosses/verminor.xml" />
@@ -483,6 +497,7 @@
 	<monster name="Xenia" file="Bosses/xenia.xml" />
 	<monster name="Yaga The Crone" file="Bosses/yaga_the_crone.xml" />
 	<monster name="Yakchal" file="Bosses/yakchal.xml" />
+	<monster name="Zanakeph" file="Bosses/zanakeph.xml" />
 	<monster name="Zavarash" file="Bosses/zavarash.xml" />
 	<monster name="Zevelon Duskbringer" file="Bosses/zevelon_duskbringer.xml" />
 	<monster name="Zomba" file="Bosses/zomba.xml" />
