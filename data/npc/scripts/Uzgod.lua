@@ -23,7 +23,7 @@ local function creatureSayCallback(cid, type, msg)
 				npcHandler.topic[cid] = 0
 			end
 		else
-			npcHandler:say("You dont have these items.", cid)
+			npcHandler:say("You don\'t have these items.", cid)
 			npcHandler.topic[cid] = 0
 		end
 	end
@@ -60,13 +60,13 @@ local function creatureSayCallback(cid, type, msg)
 			npcHandler.topic[cid] = 0
 			player:setStorageValue(Storage.ExplorerSociety.QuestLine, 2)
 		elseif(npcHandler.topic[cid] == 3) then
-			if player:removeItem(2318, 1) then
+			if player:removeItem(4845, 1) then -----
 				npcHandler:say("Thanking you for brooch. Me guessing you now want your pickaxe?", cid)
 				npcHandler.topic[cid] = 4
 			end
 		elseif(npcHandler.topic[cid] == 4) then
 			npcHandler:say("Here you have it.", cid)
-			player:addItem(11421, 1)
+			player:addItem(4874, 1) -----
 			player:setStorageValue(Storage.ExplorerSociety.QuestLine, 3)
 			npcHandler.topic[cid] = 0
 		elseif(npcHandler.topic[cid] == 9) then

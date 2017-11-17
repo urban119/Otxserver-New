@@ -667,6 +667,9 @@
 	<action itemid="8762" script="quests/the thieves guild/fishnappingKey.lua" />
 	<action actionid="12505" script="quests/the thieves guild/fishnappingDoor.lua" />
 
+	<!-- The Travelling Trader Quest -->
+	<action actionid="1108" script="quests/the travelling trader/outlawcampdoor.lua" />
+	
 	<!-- Secret Service Quest -->
 	<action itemid="7700" script="quests/secret service/amazonDisguiseKit.lua" />
 	<action itemid="7697" script="quests/secret service/ring.lua" />
