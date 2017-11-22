@@ -5,6 +5,7 @@
 	<targetchange interval="5000" chance="0" />
 	<flags>
 		<flag summonable="0" />
+		<flag rewardboss="1" />
 		<flag attackable="1" />
 		<flag hostile="1" />
 		<flag illusionable="1" />
@@ -18,7 +19,6 @@
 	</flags>
 	<attacks>
 		<attack name="melee" interval="2000" skill="250" attack="180" />
-		
 	</attacks>
 	<defenses armor="10" defense="10" />
 	<elements>
@@ -31,5 +31,4 @@
 		<voice sentence="Togheter we are unstoppable!" />
 		<voice sentence="You will fall before our might!" />
 	</voices>
-	
 </monster>
