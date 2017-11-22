@@ -5,6 +5,7 @@
 	<targetchange interval="10000" chance="20" />
 	<flags>
 		<flag summonable="0" />
+		<flag rewardboss="1" />
 		<flag attackable="1" />
 		<flag hostile="1" />
 		<flag illusionable="0" />
@@ -15,31 +16,24 @@
 		<flag staticattack="98" />
 		<flag targetdistance="1" />
 		<flag runonhealth="0" />
-		
 	</flags>
-
 	<attacks>
 		<attack name="melee" interval="2000"  min="-999" max="-1000"/>
-		
 		<attack name="poison" interval="1000" chance="12" radius="7" target="0" min="-600" max="-900">
 			<attribute key="areaEffect" value="poison" />
 		</attack>
 		<attack name="poisonfield" interval="2000" chance="10" range="7" radius="4" target="1">
 			<attribute key="shootEffect" value="earth" />
 		</attack>
-
-
 		<attack name="energy" interval="3000" chance="35" range="7" radius="7" target="1" min="0" max="-1600">
 			<attribute key="areaEffect" value="energy" />
 		</attack>
 		<attack name="energyfield" interval="2000" chance="10" range="7" radius="4" target="1">
 			<attribute key="shootEffect" value="energy" />
 		</attack>
-	
 	</attacks>
 	<defenses armor="55" defense="65">
 	<defense name="healing" interval="2000" chance="35" min="300" max="800"/>
-			
 	</defenses>
 	<elements>
 		<element icePercent="30" />
@@ -49,13 +43,11 @@
 		<element deathPercent="30" />
 		<element firePercent="30" />
 		<element physicalPercent="30" />
-		
 	</elements>
 	<summons maxSummons="5">
 		<summon name="Sword Of Vengeance" interval="3000" chance="100" />
 		<summon name="Sword Of Vengeance" interval="7000" chance="100" />
 	</summons>
-	
 	<voices interval="5000" chance="30">
 		<voice sentence="This place is sacred!" yell="1" />
 	</voices>
@@ -70,7 +62,6 @@
         <item id="5880" chance="10000" countmax="5" /><!-- iron ore -->
 		<item id="8472" countmax="3" chance="18250" /><!-- great spirit potion -->	
 		<item id="5999" countmax="2" chance="5909" /><!--  White Piece of Cloths -->
-		
 		<item id="10549" chance="20000" /><!-- ancient stone -->
 		<item id="22413" chance="16000" /><!-- crude umbral hammer -->
 		<item id="7632" chance="7000" /><!-- Giant Shimmering Pearl -->
