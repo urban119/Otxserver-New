@@ -4,6 +4,7 @@
 	<look type="261" corpse="7282" />
 	<targetchange interval="2000" chance="5" />
 	<flags>
+	    <flag rewardboss="1" />
 		<flag summonable="0" />
 		<flag attackable="1" />
 		<flag hostile="1" />
@@ -53,7 +54,6 @@
 		<item id="25172" chance="1970" /><!--     silver token -->
 		<item id="8473" countmax="3" chance="19500" /><!-- ultimate health potion -->		
 		<item id="18415" countmax="5" chance="9660" /><!-- violet crystal shard -->
-		
 		<item id="7459"  chance="9660" /><!--  Pair of Earmuffs -->
 		<item id="26174"  chance="9660" /><!--  Spark Sphere -->
 		<item id="27633" chance="9660" /><!--  Glowing Carrot -->
@@ -62,13 +62,11 @@
 		<item id="5892" chance="9660" /><!--   Huge Chunk of Crude Iron -->
 		<item id="2445" chance="9660" /><!--   Crystal Mace -->
 		<item id="18450" chance="9660" /><!--   Crystalline Sword -->
-		<item id="18465" chance="9660" /><!--   Shiny Blade -->
-		<item id="15644" chance="9660" /><!--    Ornate Crossbow -->
-		<item id="8887" chance="9660" /><!--    Frozen Plate -->
+		<item id="18465" chance="200" /><!--   Shiny Blade -->
+		<item id="15644" chance="200" /><!--    Ornate Crossbow -->
+		<item id="8887" chance="500" /><!--    Frozen Plate -->
 		<item id="2444" chance="9660" /><!--    Hammer of Wrath -->
-		<item id="27614" chance="9660" /><!--    Part of a Rune(quinta) -->
-		<item id="21697" chance="9660" /><!--    Runic Ice Shield -->
-
-		
+		<item id="27614" chance="200" /><!--    Part of a Rune(quinta) -->
+		<item id="21697" chance="200" /><!--    Runic Ice Shield -->
 	</loot>
 </monster>
