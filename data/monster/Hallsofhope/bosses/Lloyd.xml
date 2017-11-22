@@ -4,12 +4,13 @@
 	<look type="940"  corpse="27595" />
 	<targetchange interval="4000" chance="20" />
 	<flags>
+	    <flag rewardboss="1" />
 		<flag summonable="0" />
 		<flag attackable="1" />
 		<flag hostile="1" />
 		<flag illusionable="0" />
 		<flag convinceable="0" />
-				<flag isblockable="0" />
+		<flag isblockable="0" />
 		<flag pushable="0" />
 		<flag canpushitems="1" />
 		<flag canpushcreatures="1" />
@@ -49,11 +50,9 @@
 		<item id="7590" countmax="3" chance="22120" /><!-- great mana potion -->
 		<item id="8473" countmax="3" chance="19500" /><!-- ultimate health potion -->					
 		<item id="2493" chance="1000" /><!-- demon helmet -->
-		
 		<item id="18413" countmax="5" chance="9660" /><!-- blue crystal shard -->
 		<item id="18414" countmax="5" chance="9660" /><!-- green crystal shard-->
 		<item id="18415" countmax="5" chance="9660" /><!-- violet crystal shard -->
-		
 		<item id="2149" countmax="5" chance="9660" /><!-- small emerald -->
 		<item id="2147" countmax="5" chance="7360" /><!-- small ruby -->
 		<item id="9970" countmax="5" chance="7350" /><!-- small topaz -->
@@ -61,7 +60,6 @@
 		<item id="5888" countmax="2" chance="5888" /><!--  Piece of Hell Steel -->
 		<item id="5999" countmax="2" chance="5909" /><!--  White Piece of Cloths -->
 		<item id="5887" countmax="2" chance="5909" /><!--  Piece of Royal Steel -->
-		
 		<item id="7424" chance="5000" /><!-- Lunar Staff -->
 		<item id="2158" chance="5000" /><!-- Blue Gem -->
 		<item id="2155" chance="5000" /><!-- Green Gem -->
@@ -80,8 +78,8 @@
 		<item id="8900" chance="1970" /><!--   Spellbook of Enlightenment -->
 		<item id="11355" chance="1970" /><!--   Spellweaver's Robe -->
 		<item id="25383" chance="1970" /><!--   Rift Lance -->
-		<item id="27049" chance="1970" /><!--    Pillow Backpack -->
-		<item id="25377" chance="1970" /><!--     Gold Token -->
-		<item id="25172" chance="1970" /><!--     silver token -->
+		<item id="27049" chance="200" /><!--    Pillow Backpack -->
+		<item id="25377" chance="200" /><!--     Gold Token -->
+		<item id="25172" chance="200" /><!--     silver token -->
 	</loot>
 </monster>
