@@ -4,6 +4,7 @@
 	<look type="926" corpse="27596" />
 	<targetchange interval="5000" chance="0" />
 	<flags>
+	    <flag rewardboss="1" />
 		<flag summonable="0" />
 		<flag attackable="1" />
 		<flag hostile="1" />
@@ -36,6 +37,5 @@
 	</immunities>
 	<loot>
 		<item id="27585" countmax="1" chance="50320" /><!-- Lightsphere -->
-	
 	</loot>
 </monster>
