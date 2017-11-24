@@ -674,6 +674,17 @@ Storage = {
 		DragahsSpellbook = 12709,
 		TheCounterspell = 12710
 	},
+	SearoutesAroundYalahar = {
+		TownsCounter = 12800,
+		AbDendriel = 12801,
+		Darashia = 12802,
+		Venore = 12803,
+		Ankrahmun = 12804,
+		PortHope = 12805,
+		Thais = 12806,
+		LibertyBay = 12807,
+		Carlin = 12808,
+	},	
 	KillingInTheNameOf = {
 		LugriNecromancers = 50000,
 		LugriNecromancerCount = 65050,
@@ -977,6 +988,8 @@ Storage = {
 	MaryzaCookbook = 50721,
 	combatProtectionStorage = 50722,
 	blockMovementStorage = 100000
+	
+
 }
 
 GlobalStorage = {
