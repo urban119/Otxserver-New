@@ -8,7 +8,12 @@ local tableOutfits = {
 }
 
 function onUse(player, item, fromPosition, target, toPosition, isHotkey)
-	local hasOutfit = player:getStorageValue(Storage.OutfitQuest.Afflicted.Outfit) >= 6
+	local hasOutfit = 	player:getStorageValue(Storage.OutfitQuest.Afflicted.Outfit) >= 1 and
+						player:getStorageValue(Storage.OutfitQuest.Afflicted.Outfit-1) >= 1 and
+						player:getStorageValue(Storage.OutfitQuest.Afflicted.Outfit-2) >= 1 and
+						player:getStorageValue(Storage.OutfitQuest.Afflicted.Outfit-3) >= 1 and
+						player:getStorageValue(Storage.OutfitQuest.Afflicted.Outfit-4) >= 1 and
+						player:getStorageValue(Storage.OutfitQuest.Afflicted.Outfit-5) >= 1
 
 	-- Plgue Mask
 	if item.itemid == 13925 then
