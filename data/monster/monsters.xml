@@ -528,6 +528,7 @@
 	<monster name="Chakoya Toolshaper" file="Chakoyas/chakoya_toolshaper.xml" />
 	<monster name="Chakoya Tribewarden" file="Chakoyas/chakoya_tribewarden.xml" />
 	<monster name="Chakoya Windcaller" file="Chakoyas/chakoya_windcaller.xml" />
+	<monster name="Ocyakao" file="Chakoyas/ocyakao.xml" />
 
 	<!-- Cnidarians -->
 	<monster name="Jellyfish" file="Cnidarians/jellyfish.xml" />
