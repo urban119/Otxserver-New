@@ -26,7 +26,7 @@ for i = 40, 50 do
 
 	local area = createCombatArea(arr)
 	setCombatArea(combat[i], area)
-	addCombatCondition(combat[i], condition)
+	setCombatCondition(combat[i], condition)
 end
 
 function onCastSpell(cid, var)

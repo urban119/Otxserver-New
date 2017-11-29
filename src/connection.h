@@ -49,7 +49,7 @@ class ConnectionManager
 		void releaseConnection(const Connection_ptr& connection);
 		void closeAll();
 
-	private:
+	protected:
 		ConnectionManager() = default;
 
 		std::unordered_set<Connection_ptr> connections;

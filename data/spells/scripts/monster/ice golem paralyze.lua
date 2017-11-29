@@ -4,7 +4,7 @@ setCombatParam(combat, COMBAT_PARAM_EFFECT, CONST_ME_ICEAREA)
 local condition = createConditionObject(CONDITION_PARALYZE)
 setConditionParam(condition, CONDITION_PARAM_TICKS, 20000)
 setConditionFormula(condition, -0.35, 0, -0.45, 0)
-addCombatCondition(combat, condition)
+setCombatCondition(combat, condition)
 
 	arr = {
 		{0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0},
@@ -19,7 +19,7 @@ addCombatCondition(combat, condition)
 
 local area = createCombatArea(arr)
 	setCombatArea(combat, area)
-	addCombatCondition(combat, condition)
+	setCombatCondition(combat, condition)
 
 
 function onCastSpell(cid, var)

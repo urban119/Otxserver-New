@@ -84,7 +84,7 @@ class FrozenPathingConditionCall
 		bool isInRange(const Position& startPos, const Position& testPos,
 		               const FindPathParams& fpp) const;
 
-	private:
+	protected:
 		Position targetPos;
 };
 
@@ -106,10 +106,10 @@ class Creature : virtual public Thing
 		Creature(const Creature&) = delete;
 		Creature& operator=(const Creature&) = delete;
 
-		Creature* getCreature() override final {
+		Creature* getCreature() final {
 			return this;
 		}
-		const Creature* getCreature() const override final {
+		const Creature* getCreature() const final {
 			return this;
 		}
 		virtual Player* getPlayer() {
@@ -181,13 +181,13 @@ class Creature : virtual public Thing
 			moveLocked = locked;
 		}
 
-		int32_t getThrowRange() const override final {
+		int32_t getThrowRange() const final {
 			return 1;
 		}
 		bool isPushable() const override {
 			return getWalkDelay() <= 0;
 		}
-		bool isRemoved() const override final {
+		bool isRemoved() const final {
 			return isInternalRemoved;
 		}
 		virtual bool canSeeInvisibility() const {
@@ -378,9 +378,11 @@ class Creature : virtual public Thing
 		virtual void onAttackedCreatureChangeZone(ZoneType_t zone);
 		virtual void onIdleStatus();
 
-		virtual LightInfo getCreatureLight() const;
+		virtual void getCreatureLight(LightInfo& light) const;
 		virtual void setNormalCreatureLight();
-		void setCreatureLight(LightInfo lightInfo);
+		void setCreatureLight(LightInfo light) {
+			internalLight = light;
+		}
 
 		virtual void onThink(uint32_t interval);
 		void onAttacking(uint32_t interval);
@@ -424,22 +426,22 @@ class Creature : virtual public Thing
 		bool registerCreatureEvent(const std::string& name);
 		bool unregisterCreatureEvent(const std::string& name);
 
-		Cylinder* getParent() const override final {
+		Cylinder* getParent() const final {
 			return tile;
 		}
-		void setParent(Cylinder* cylinder) override final {
+		void setParent(Cylinder* cylinder) final {
 			tile = static_cast<Tile*>(cylinder);
 			position = tile->getPosition();
 		}
 
-		const Position& getPosition() const override final {
+		const Position& getPosition() const final {
 			return position;
 		}
 
-		Tile* getTile() override final {
+		Tile* getTile() final {
 			return tile;
 		}
-		const Tile* getTile() const override final {
+		const Tile* getTile() const final {
 			return tile;
 		}
 

@@ -4,7 +4,7 @@ combat:setParameter(COMBAT_PARAM_AGGRESSIVE, 0)
 
 local condition = Condition(CONDITION_MANASHIELD)
 condition:setParameter(CONDITION_PARAM_TICKS, 200000)
-combat:addCondition(condition)
+combat:setCondition(condition)
 
 function onCastSpell(creature, var)
 	return combat:execute(creature, var)
