@@ -258,4 +258,4 @@ function Player.sendDamageImpact(self, damage)
 	msg:addByte(1) -- 0 = healing / 1 = damage (boolean)
 	msg:addU32(damage) -- unsigned int
 	msg:sendToPlayer(self)
-end 
+end

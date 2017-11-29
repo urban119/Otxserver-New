@@ -109,11 +109,21 @@ function pushThing(thing)
 end
 
 createCombatObject = Combat
+addCombatCondition = Combat.addCondition
 setCombatArea = Combat.setArea
 setCombatCallback = Combat.setCallback
-setCombatCondition = Combat.setCondition
 setCombatFormula = Combat.setFormula
 setCombatParam = Combat.setParameter
+
+Combat.setCondition = function(...)
+	print("[Warning] Function Combat.setCondition was renamed to Combat.addCondition and will be removed in the future")
+	Combat.addCondition(...)
+end
+
+setCombatCondition = function(...)
+	print("[Warning] Function setCombatCondition was renamed to addCombatCondition and will be removed in the future")
+	Combat.addCondition(...)
+end
 
 createConditionObject = Condition
 setConditionParam = Condition.setParameter
@@ -183,6 +193,7 @@ function doSetCreatureDropLoot(cid, doDrop) local c = Creature(cid) return c ~= 
 function doChangeSpeed(cid, delta) local c = Creature(cid) return c ~= nil and c:changeSpeed(delta) or false end
 function doAddCondition(cid, conditionId) local c = Creature(cid) return c ~= nil and c:addCondition(conditionId) or false end
 function doRemoveCondition(cid, conditionType, subId) local c = Creature(cid) return c ~= nil and (c:removeCondition(conditionType, CONDITIONID_COMBAT, subId) or c:removeCondition(conditionType, CONDITIONID_DEFAULT, subId) or true) end
+function getCreatureCondition(cid, type, subId) local c = Creature(cid) return c ~= nil and c:hasCondition(type, subId) or false end
 
 doSetCreatureDirection = doCreatureSetLookDir
 
@@ -538,19 +549,19 @@ function doSummonCreature(name, pos, ...)
 	local m = Game.createMonster(name, pos, ...) return m ~= nil and m:getId() or false
 end
 function doConvinceCreature(cid, target)
- 	local creature = Creature(cid)
- 	if creature == nil then
- 		return false
- 	end
- 
- 	local targetCreature = Creature(target)
- 	if targetCreature == nil then
- 		return false
- 	end
- 
+	local creature = Creature(cid)
+	if creature == nil then
+		return false
+	end
+
+	local targetCreature = Creature(target)
+	if targetCreature == nil then
+		return false
+	end
+
 	creature:addSummon(targetCreature)
- 	return true
- end
+	return true
+end
 
 function getTownId(townName) local t = Town(townName) return t ~= nil and t:getId() or false end
 function getTownName(townId) local t = Town(townId) return t ~= nil and t:getName() or false end
