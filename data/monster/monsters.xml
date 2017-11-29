@@ -900,6 +900,7 @@
 	<monster name="Orcarmor" file="Orcs/orcarmor.xml" />
 	<monster name="Orchelmet" file="Orcs/orchelmet.xml" />
 	<monster name="Orcshield" file="Orcs/orcshield.xml" />
+	<monster name="Orc Sambackpack" file="Orcs/orc_sambackpack.xml" />
 
 	<!-- Outlaws -->
 	<monster name="Adventurer" file="Outlaws/adventurer.xml" />

@@ -139,7 +139,7 @@ local function creatureSayCallback(cid, type, msg)
 			player:addMoney(1000)
 			npcHandler.topic[cid] = 0
 		elseif(npcHandler.topic[cid] == 12) then
-			if player:removeItem(8760, 1) then
+			if player:removeItem(7582, 1) then
 				npcHandler:say("I'm surprised that you managed to bring this vase without a single crack. That was what I needed to know, thank you. ", cid)
 				player:setStorageValue(Storage.TravellingTrader.Mission04, 3)
 				npcHandler.topic[cid] = 0
@@ -216,10 +216,10 @@ npcHandler:setMessage(MESSAGE_WALKAWAY, "Come back soon!")
 npcHandler:setMessage(MESSAGE_SENDTRADE, "Take all the time you need to decide what you want!")
 
 local function onTradeRequest(cid)
---!--	if Player(cid):getStorageValue(Storage.TravellingTrader.Mission07) ~= 1 then
---!--		npcHandler:say('Sorry, but you do not belong to my exclusive customers. I have to make sure that I can trust in the quality of your wares.', cid)
---!--		return false
---!--	end
+	if Player(cid):getStorageValue(Storage.TravellingTrader.Mission07) ~= 1 then
+		npcHandler:say('Sorry, but you do not belong to my exclusive customers. I have to make sure that I can trust in the quality of your wares.', cid)
+		return false
+	end
 
 	return true
 end

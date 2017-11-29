@@ -1702,7 +1702,7 @@
 	<item id="26409" name="Brass-Shod Chest">
 	</item>
 	<item id="26654" article="a" name="Heavy Old Tome">
-		<attribute key="weight" value="10" />
+		<attribute key="weight" value="1000" />
 	</item>
 	<item id="1715" name="chest of drawers">
 		<attribute key="rotateTo" value="1714" />
