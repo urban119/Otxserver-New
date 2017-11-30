@@ -13,6 +13,7 @@ Servidor de Tibia mantido por Malucooo. O servidor usa como base OTX Server 3.10
 ###### 2.2 -> Leia toda a descrição do nosso GitHub para não ter dúvidas no futuro.
 ###### 2.3 -> Proibido abrir um issue ou pull request que não tenha relação com o OTX ou Gesior. Exemplo: Abrir issue de problema WEB no GitHub da OTX.
 ###### 2.4 -> Se mesmo assim ainda tiver dificuldades com alguma atividade, favor procurar em fóruns relacionados ao OpenTibia. (TibiaKing, Otland, xTibia)
+###### 2.5 -> Ao abrir um issue, obrigatoriamente você deve seguir a estrutura na aba "Write"
 
 ## 3 -> Observações Finais
 ###### 3.1 -> Leitura lhe ajudará em qualquer tipo de questão.
@@ -26,7 +27,7 @@ Servidor de Tibia mantido por Malucooo. O servidor usa como base OTX Server 3.10
 
 [Fórum BR²](www.xtibia.com)
 
-[Fórum Alternativo](www.otland.com)
+[Fórum Alternativo](www.otland.net)
 
 # Caso necessite de um especialista na área:
 Temos um desenvolvedor a indicar, pois como muitos sabem existem pessoas que revendem sistemas, recebem a grana e desaparece sem dar o suporte... consulte-o e adicione mais alguns sistemas a sua datapack!
