@@ -14078,7 +14078,7 @@
 	<item id="29035"  article="an" name="leaf star">
 	<attribute key="weight" value="200" />
 		<attribute key="attack" value="48" />
-		<attribute key="maxHitChance" value="86" />
+		<attribute key="maxHitChance" value="84" />
 		<attribute key="weaponType" value="distance" />
 		<attribute key="shootType" value="greenstar" />
 		<attribute key="range" value="5" />
