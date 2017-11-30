@@ -54,16 +54,16 @@ class GlobalEvents final : public BaseEvents
 		GlobalEventMap getEventMap(GlobalEvent_t type);
 		static void clearMap(GlobalEventMap& map);
 
-	private:
-		std::string getScriptBaseName() const override {
+	protected:
+		std::string getScriptBaseName() const final {
 			return "globalevents";
 		}
-		void clear() override;
+		void clear() final;
 
-		Event* getEvent(const std::string& nodeName) override;
-		bool registerEvent(Event* event, const pugi::xml_node& node) override;
+		Event* getEvent(const std::string& nodeName) final;
+		bool registerEvent(Event* event, const pugi::xml_node& node) final;
 
-		LuaScriptInterface& getScriptInterface() override {
+		LuaScriptInterface& getScriptInterface() final {
 			return scriptInterface;
 		}
 		LuaScriptInterface scriptInterface;
@@ -77,7 +77,7 @@ class GlobalEvent final : public Event
 	public:
 		explicit GlobalEvent(LuaScriptInterface* interface);
 
-		bool configureEvent(const pugi::xml_node& node) override;
+		bool configureEvent(const pugi::xml_node& node) final;
 
 		bool executeRecord(uint32_t current, uint32_t old);
 		bool executeEvent();
@@ -101,10 +101,10 @@ class GlobalEvent final : public Event
 			nextExecution = time;
 		}
 
-	private:
+	protected:
 		GlobalEvent_t eventType = GLOBALEVENT_NONE;
 
-		std::string getScriptEventName() const override;
+		std::string getScriptEventName() const final;
 
 		std::string name;
 		int64_t nextExecution = 0;

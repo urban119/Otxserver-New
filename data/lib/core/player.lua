@@ -88,7 +88,7 @@ function Player.getBlessings(self)
 end
 
 function Player.getClosestFreePosition(self, position, extended)
-	if self:getGroup():getAccess() and self:getAccountType() >= ACCOUNT_TYPE_GOD then
+	if self:getAccountType() >= ACCOUNT_TYPE_GOD then
 		return position
 	end
 	return Creature.getClosestFreePosition(self, position, extended)
@@ -258,4 +258,4 @@ function Player.sendDamageImpact(self, damage)
 	msg:addByte(1) -- 0 = healing / 1 = damage (boolean)
 	msg:addU32(damage) -- unsigned int
 	msg:sendToPlayer(self)
-end
+end 

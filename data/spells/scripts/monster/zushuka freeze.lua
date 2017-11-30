@@ -6,7 +6,7 @@ setCombatParam(combat, COMBAT_PARAM_DISTANCEEFFECT, CONST_ANI_SHIVERARROW)
 local condition = createConditionObject(CONDITION_FREEZING)
 setConditionParam(condition, CONDITION_PARAM_DELAYED, 1)
 addDamageCondition(condition, 30, 8000, -8)
-addCombatCondition(combat, condition)
+setCombatCondition(combat, condition)
 
 function onCastSpell(cid, var)
 	return doCombat(cid, combat, var)

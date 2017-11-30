@@ -2,6 +2,33 @@
 
 Servidor de Tibia mantido por Malucooo. O servidor usa como base OTX Server 3.10.
 
+# Regras gerais:
+## 1 -> Desenvolvimento
+###### 1.1 -> Proibido reportar um BUG diretamente no Whatsapp sem ter aberto um issue relativo ao mesmo.
+###### 1.2 -> Proibido solicitar ajuda em relação à infraestrutura (Instalação VPS, abertura de Servidor e etc).
+###### 1.3 -> Caso tenha uma contribuição, abra um pull request no GitHub de onde pegou sua base (Gesior, OTX e etc).
+
+## 2 -> Geral
+###### 2.1 -> Antes de qualquer ação, favor estudar sobre a estrutura do OpenTibia em si, tanto na parte WEB quanto Software.
+###### 2.2 -> Leia toda a descrição do nosso GitHub para não ter dúvidas no futuro.
+###### 2.3 -> Proibido abrir um issue ou pull request que não tenha relação com o OTX ou Gesior. Exemplo: Abrir issue de problema WEB no GitHub da OTX.
+###### 2.4 -> Se mesmo assim ainda tiver dificuldades com alguma atividade, favor procurar em fóruns relacionados ao OpenTibia. (TibiaKing, Otland, xTibia)
+###### 2.5 -> Ao abrir um issue, obrigatoriamente você deve seguir a estrutura na aba "Write"
+
+## 3 -> Observações Finais
+###### 3.1 -> Leitura lhe ajudará em qualquer tipo de questão.
+###### 3.2 -> Esse Servidor de Tibia como de qualquer outro jogo sempre precisará de conhecimento básico.
+###### 3.3 -> Procure sempre usar o Google ou até mesmo o YouTube como fonte de dúvidas, incluindo fóruns também.
+
+# Referências:
+-> [Abrindo um pull request](https://www.youtube.com/watch?v=E8MPe6tCMo8)
+
+-> [Fórum BR](http://www.tibiaking.com)
+
+-> [Fórum BR²](http://www.xtibia.com)
+
+-> [Fórum Alternativo](https://www.otland.net)
+
 # Caso necessite de um especialista na área:
 Temos um desenvolvedor a indicar, pois como muitos sabem existem pessoas que revendem sistemas, recebem a grana e desaparece sem dar o suporte... consulte-o e adicione mais alguns sistemas a sua datapack!
 
