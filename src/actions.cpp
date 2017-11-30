@@ -348,7 +348,6 @@ ReturnValue Actions::internalUseItem(Player* player, const Position& pos, uint8_
 			//only players who participated in the fight can open the corpse
 			if (player->getGroup()->id >= 4 || player->getAccountType() >= 3)
 				return RETURNVALUE_YOUCANTOPENCORPSEADM;
-
 			if (!player->getReward(container->getIntAttr(ITEM_ATTRIBUTE_DATE), false)) {
 				return RETURNVALUE_YOUARENOTTHEOWNER;
 			}

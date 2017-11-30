@@ -59,12 +59,12 @@ class CreatureEvents final : public BaseEvents
 
 		CreatureEvent* getEventByName(const std::string& name, bool forceLoaded = true);
 
-	private:
-		LuaScriptInterface& getScriptInterface() override;
-		std::string getScriptBaseName() const override;
-		Event* getEvent(const std::string& nodeName) override;
-		bool registerEvent(Event* event, const pugi::xml_node& node) override;
-		void clear() override;
+	protected:
+		LuaScriptInterface& getScriptInterface() final;
+		std::string getScriptBaseName() const final;
+		Event* getEvent(const std::string& nodeName) final;
+		bool registerEvent(Event* event, const pugi::xml_node& node) final;
+		void clear() final;
 
 		//creature events
 		using CreatureEventMap = std::map<std::string, CreatureEvent*>;
@@ -78,7 +78,7 @@ class CreatureEvent final : public Event
 	public:
 		explicit CreatureEvent(LuaScriptInterface* interface);
 
-		bool configureEvent(const pugi::xml_node& node) override;
+		bool configureEvent(const pugi::xml_node& node) final;
 
 		CreatureEventType_t getEventType() const {
 			return type;
@@ -108,8 +108,8 @@ class CreatureEvent final : public Event
 		void executeExtendedOpcode(Player* player, uint8_t opcode, const std::string& buffer);
 		//
 
-	private:
-		std::string getScriptEventName() const override;
+	protected:
+		std::string getScriptEventName() const final;
 
 		std::string eventName;
 		CreatureEventType_t type;

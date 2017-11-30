@@ -56,17 +56,17 @@ class Spells final : public BaseEvents
 		TalkActionResult_t playerSaySpell(Player* player, std::string& words);
 
 		static Position getCasterPosition(Creature* creature, Direction dir);
-		std::string getScriptBaseName() const override;
+		std::string getScriptBaseName() const final;
 
 		const std::map<std::string, InstantSpell*>& getInstantSpells() const {
 			return instants;
 		};
 
-	private:
-		void clear() override;
-		LuaScriptInterface& getScriptInterface() override;
-		Event* getEvent(const std::string& nodeName) override;
-		bool registerEvent(Event* event, const pugi::xml_node& node) override;
+	protected:
+		void clear() final;
+		LuaScriptInterface& getScriptInterface() final;
+		Event* getEvent(const std::string& nodeName) final;
+		bool registerEvent(Event* event, const pugi::xml_node& node) final;
 
 		std::map<uint16_t, RuneSpell*> runes;
 		std::map<std::string, InstantSpell*> instants;
@@ -97,9 +97,9 @@ class CombatSpell final : public Event, public BaseSpell
 		CombatSpell(const CombatSpell&) = delete;
 		CombatSpell& operator=(const CombatSpell&) = delete;
 
-		bool castSpell(Creature* creature) override;
-		bool castSpell(Creature* creature, Creature* target) override;
-		bool configureEvent(const pugi::xml_node&) override {
+		bool castSpell(Creature* creature) final;
+		bool castSpell(Creature* creature, Creature* target) final;
+		bool configureEvent(const pugi::xml_node&) final {
 			return true;
 		}
 
@@ -111,8 +111,8 @@ class CombatSpell final : public Event, public BaseSpell
 			return combat;
 		}
 
-	private:
-		std::string getScriptEventName() const override {
+	protected:
+		std::string getScriptEventName() const final {
 			return "onCastSpell";
 		}
 
@@ -173,14 +173,16 @@ class Spell : public BaseSpell
 		bool playerInstantSpellCheck(Player* player, const Position& toPos);
 		bool playerRuneSpellCheck(Player* player, const Position& toPos);
 
-		VocSpellMap vocSpellMap;
-
+		uint8_t spellId = 0;
 		SpellGroup_t group = SPELLGROUP_NONE;
-		SpellGroup_t secondaryGroup = SPELLGROUP_NONE;
-
-		uint32_t cooldown = 1000;
 		uint32_t groupCooldown = 1000;
+		SpellGroup_t secondaryGroup = SPELLGROUP_NONE;
 		uint32_t secondaryGroupCooldown = 0;
+
+		uint32_t mana = 0;
+		uint32_t manaPercent = 0;
+		uint32_t soul = 0;
+		uint32_t cooldown = 1000;
 		uint32_t level = 0;
 		uint32_t magLevel = 0;
 		int32_t range = -1;
@@ -192,18 +194,9 @@ class Spell : public BaseSpell
 		int32_t shield = 0;
 		int32_t fish = 0;
 
-		uint8_t spellId = 0;
-
-		bool selfTarget = false;
 		bool needTarget = false;
-
-	private:
-
-		uint32_t mana = 0;
-		uint32_t manaPercent = 0;
-		uint32_t soul = 0;
-
 		bool needWeapon = false;
+		bool selfTarget = false;
 		bool blockingSolid = false;
 		bool blockingCreature = false;
 		bool aggressive = true;
@@ -211,6 +204,7 @@ class Spell : public BaseSpell
 		bool enabled = true;
 		bool premium = false;
 
+		VocSpellMap vocSpellMap;
 
 	private:
 		std::string name;
@@ -231,7 +225,7 @@ class InstantSpell : public TalkAction, public Spell
 		//scripting
 		bool executeCastSpell(Creature* creature, const LuaVariant& var);
 
-		bool isInstant() const override {
+		bool isInstant() const final {
 			return true;
 		}
 		bool getHasParam() const {
@@ -243,7 +237,7 @@ class InstantSpell : public TalkAction, public Spell
 		bool canCast(const Player* player) const;
 		bool canThrowSpell(const Creature* creature, const Creature* target) const;
 
-	private:
+	protected:
 		std::string getScriptEventName() const override;
 
 		bool internalCastSpell(Creature* creature, const LuaVariant& var);
@@ -260,20 +254,20 @@ class ConjureSpell final : public InstantSpell
 	public:
 		explicit ConjureSpell(LuaScriptInterface* interface) : InstantSpell(interface) {}
 
-		bool configureEvent(const pugi::xml_node& node) override;
-		bool loadFunction(const pugi::xml_attribute& attr) override;
+		bool configureEvent(const pugi::xml_node& node) final;
+		bool loadFunction(const pugi::xml_attribute& attr) final;
 
-		virtual bool playerCastInstant(Player* player, std::string& param);
+		bool playerCastInstant(Player* player, std::string& param) final;
 
-		bool castSpell(Creature*) override {
+		bool castSpell(Creature*) final {
 			return false;
 		}
-		bool castSpell(Creature*, Creature*) override {
+		bool castSpell(Creature*, Creature*) final {
 			return false;
 		}
 
-	private:
-		std::string getScriptEventName() const override;
+	protected:
+		std::string getScriptEventName() const final;
 
 		bool conjureItem(Creature* creature) const;
 
@@ -287,34 +281,34 @@ class RuneSpell final : public Action, public Spell
 	public:
 		explicit RuneSpell(LuaScriptInterface* interface) : Action(interface) {}
 
-		bool configureEvent(const pugi::xml_node& node) override;
-		bool loadFunction(const pugi::xml_attribute& attr) override;
+		bool configureEvent(const pugi::xml_node& node) final;
+		bool loadFunction(const pugi::xml_attribute& attr) final;
 
-		ReturnValue canExecuteAction(const Player* player, const Position& toPos) override;
-		bool hasOwnErrorHandler() override {
+		ReturnValue canExecuteAction(const Player* player, const Position& toPos) final;
+		bool hasOwnErrorHandler() final {
 			return true;
 		}
-		Thing* getTarget(Player*, Creature* targetCreature, const Position&, uint8_t) const override {
+		Thing* getTarget(Player*, Creature* targetCreature, const Position&, uint8_t) const final {
 			return targetCreature;
 		}
 
-		bool executeUse(Player* player, Item* item, const Position& fromPosition, Thing* target, const Position& toPosition, bool isHotkey) override;
+		bool executeUse(Player* player, Item* item, const Position& fromPosition, Thing* target, const Position& toPosition, bool isHotkey) final;
 
-		bool castSpell(Creature* creature) override;
-		bool castSpell(Creature* creature, Creature* target) override;
+		bool castSpell(Creature* creature) final;
+		bool castSpell(Creature* creature, Creature* target) final;
 
 		//scripting
 		bool executeCastSpell(Creature* creature, const LuaVariant& var, bool isHotkey);
 
-		bool isInstant() const override {
+		bool isInstant() const final {
 			return false;
 		}
 		uint16_t getRuneItemId() const {
 			return runeId;
 		}
 
-	private:
-		std::string getScriptEventName() const override;
+	protected:
+		std::string getScriptEventName() const final;
 
 		bool internalCastSpell(Creature* creature, const LuaVariant& var, bool isHotkey);
 

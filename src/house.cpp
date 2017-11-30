@@ -82,7 +82,7 @@ void House::setOwner(uint32_t guid, bool updateDatabase/* = true*/, Player* play
 		setAccessList(SUBOWNER_LIST, "");
 		setAccessList(GUEST_LIST, "");
 
-		for (Door* door : doorSet) {
+		for (Door* door : doorList) {
 			door->setAccessList("");
 		}
 
@@ -116,7 +116,7 @@ void House::updateDoorDescription() const
 		}
 	}
 
-	for (const auto& it : doorSet) {
+	for (const auto& it : doorList) {
 		it->setSpecialDescription(ss.str());
 	}
 }
@@ -275,17 +275,17 @@ bool House::isInvited(const Player* player)
 void House::addDoor(Door* door)
 {
 	door->incrementReferenceCounter();
-	doorSet.insert(door);
+	doorList.push_back(door);
 	door->setHouse(this);
 	updateDoorDescription();
 }
 
 void House::removeDoor(Door* door)
 {
-	auto it = doorSet.find(door);
-	if (it != doorSet.end()) {
+	auto it = std::find(doorList.begin(), doorList.end(), door);
+	if (it != doorList.end()) {
 		door->decrementReferenceCounter();
-		doorSet.erase(it);
+		doorList.erase(it);
 	}
 }
 
@@ -297,7 +297,7 @@ void House::addBed(BedItem* bed)
 
 Door* House::getDoorByNumber(uint32_t doorId) const
 {
-	for (Door* door : doorSet) {
+	for (Door* door : doorList) {
 		if (door->getDoorId() == doorId) {
 			return door;
 		}
@@ -307,7 +307,7 @@ Door* House::getDoorByNumber(uint32_t doorId) const
 
 Door* House::getDoorByPosition(const Position& pos)
 {
-	for (Door* door : doorSet) {
+	for (Door* door : doorList) {
 		if (door->getPosition() == pos) {
 			return door;
 		}
@@ -621,8 +621,8 @@ bool Houses::loadHousesXML(const std::string& filename)
 		);
 		if (entryPos.x == 0 && entryPos.y == 0 && entryPos.z == 0) {
 			std::cout << "[Warning - Houses::loadHousesXML] House entry not set"
-					    << " - Name: " << house->getName()
-					    << " - House id: " << houseId << std::endl;
+						<< " - Name: " << house->getName()
+						<< " - House id: " << houseId << std::endl;
 		}
 		house->setEntryPos(entryPos);
 

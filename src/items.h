@@ -153,13 +153,7 @@ class ItemType
 			return (type == ITEM_TYPE_BED);
 		}
 		bool isRune() const {
-			return (type == ITEM_TYPE_RUNE);
-		}
-		bool isPickupable() const {
-			return (allowPickupable || pickupable);
-		}
-		bool isUseable() const {
-			return (useable);
+			return type == ITEM_TYPE_RUNE;
 		}
 		bool hasSubType() const {
 			return (isFluidContainer() || isSplash() || stackable || charges != 0);
@@ -321,7 +315,7 @@ class Items
 
 		NameMap nameToItems;
 
-	private:
+	protected:
 		std::map<uint16_t, uint16_t> reverseItemMap;
 		std::vector<ItemType> items;
 };
