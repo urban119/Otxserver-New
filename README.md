@@ -23,11 +23,11 @@ Servidor de Tibia mantido por Malucooo. O servidor usa como base OTX Server 3.10
 # Referências:
 -> [Abrindo um pull request](https://www.youtube.com/watch?v=E8MPe6tCMo8)
 
--> [Fórum BR](www.tibiaking.com)
+-> [Fórum BR](http://www.tibiaking.com)
 
--> [Fórum BR²](www.xtibia.com)
+-> [Fórum BR²](http://www.xtibia.com)
 
--> [Fórum Alternativo](www.otland.net)
+-> [Fórum Alternativo](https://www.otland.net)
 
 # Caso necessite de um especialista na área:
 Temos um desenvolvedor a indicar, pois como muitos sabem existem pessoas que revendem sistemas, recebem a grana e desaparece sem dar o suporte... consulte-o e adicione mais alguns sistemas a sua datapack!
