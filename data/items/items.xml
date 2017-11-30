@@ -3090,17 +3090,6 @@
 		<attribute key="speed" value="40" />
 		<attribute key="showattributes" value="1" />
 	</item>
-	<item id="2358" name="thunder boots">
-		<attribute key="description" value="Faster regeneration and infinity." />
-		<attribute key="weight" value="770" />
-		<attribute key="speed" value="40" />
-		<attribute key="healthGain" value="20" />
-		<attribute key="healthTicks" value="1000" />
-		<attribute key="manaGain" value="20" />
-		<attribute key="manaTicks" value="1000" />
-		<attribute key="showattributes" value="1" />
-		<attribute key="slotType" value="feet" />
-	</item>
 	<item id="24718" article="a" name="werewolf helmet">
 		<attribute key="speed" value="30" />
 		<attribute key="weight" value="4800" />
