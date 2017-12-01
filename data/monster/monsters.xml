@@ -10,16 +10,16 @@
 	<monster name="WaspOld" file="Nostalgia/old_wasp.xml" />
 	<monster name="WolfOld" file="Nostalgia/old_wolf.xml" />
 
-    	<!-- Dawnport -->		
+    <!-- Dawnport -->		
 	<monster file="Dawnport/weakened shlorg.xml" name="Weakened Shlorg"/>
 	<monster file="Dawnport/mountain troll.xml" name="Mountain Troll"/>
 	<monster file="Dawnport/salamander trainer.xml" name="Salamander Trainer"/>
 	<monster file="Dawnport/troll marauder.xml" name="Troll Marauder"/>		
 	<monster file="Dawnport/muglex clan assassin.xml" name="Muglex Clan Assassin"/>
-    	<monster file="Dawnport/muglex clan footman.xml" name="Muglex Clan Footman"/>
-    	<monster file="Dawnport/muglex clan scavenger.xml" name="Muglex Clan Scavenger"/>		
+    <monster file="Dawnport/muglex clan footman.xml" name="Muglex Clan Footman"/>
+    <monster file="Dawnport/muglex clan scavenger.xml" name="Muglex Clan Scavenger"/>		
 	<monster file="Dawnport/troll-trained salamander.xml" name="Troll-Trained Salamander"/>	    
-    	<monster file="Dawnport/brittle skeleton.xml" name="Brittle Skeleton"/>
+    <monster file="Dawnport/brittle skeleton.xml" name="Brittle Skeleton"/>
 	<monster file="Dawnport/dawnfly.xml" name="Dawnfly"/>   
    	<monster file="Dawnport/spidris elitesumom.xml" name="Spidris Elite Sumom"/> 		
    	<monster file="Dawnport/woodling.xml" name="Woodling"/>
@@ -30,11 +30,7 @@
 	<monster file="Dawnport/meadow strider.xml" name="Meadow Strider"/>
 	<monster file="Dawnport/lesser fire devil.xml" name="Lesser Fire Devil"/>
 	<monster file="Dawnport/juvenile cyclops.xml" name="Juvenile Cyclops"/>		
-
-	<!-- Customs -->
-	<monster name="Trailemaw" file="Customs/trailemaw.xml" />
-    	<monster name="Training Monk" file="Customs/Training Monk.xml" />
-
+	
 	<!-- VOCATION SUMMONS LV 200+ -->
 	<monster name="Emberwing" file="Summons/Emberwing.xml" />
 	<monster name="Thundergiant" file="Summons/Thundergiant.xml" />
@@ -409,6 +405,7 @@
 	<monster name="Hemming" file="Bosses/hemming.xml" />
 	<monster name="Heoni" file="Bosses/heoni.xml" />
 	<monster name="Hide" file="Bosses/hide.xml" />
+	<monster name="Hirintror" file="Bosses/hirintror.xml" />
 	<monster name="Horestis" file="Bosses/horestis.xml" />
 	<monster name="Incineron" file="Bosses/incineron.xml" />
 	<monster name="Infernatil" file="Bosses/infernatil.xml" />
@@ -485,6 +482,7 @@
 	<monster name="Thul" file="Bosses/thul.xml" />
 	<monster name="Tiquandas Revenge" file="Bosses/tiquandas_revenge.xml" />
 	<monster name="Tirecz" file="Bosses/tirecz.xml" />
+	<monster name="Tyrn" file="Bosses/tyrn.xml" />
 	<monster name="Tormentor" file="Bosses/tormentor.xml" />
 	<monster name="Tremorak" file="Bosses/tremorak.xml" />
 	<monster name="Tromphonyte" file="Bosses/tromphonyte.xml" />
@@ -493,6 +491,7 @@
 	<monster name="Verminor" file="Bosses/verminor.xml" />
 	<monster name="Versperoth" file="Bosses/versperoth.xml" />
 	<monster name="Warlord Ruzad" file="Bosses/warlord_ruzad.xml" />
+	<monster name="White Pale" file="Bosses/white_pale.xml" />
 	<monster name="Wrath of the Emperor" file="Bosses/wrath_of_the_emperor.xml" />
 	<monster name="Xenia" file="Bosses/xenia.xml" />
 	<monster name="Yaga The Crone" file="Bosses/yaga_the_crone.xml" />
