@@ -1320,5 +1320,5 @@
 	<distance id="23839" action="removecount" unproperly="0" level="1" /> <!-- Simple Arrow -->
 	<distance id="29056" action="removecount" unproperly="1" level="150" script="diamond_arrow.lua" />	<!-- Diamond Arrow -->
 	<distance id="29057" action="removecount" unproperly="1" level="150" />	<!-- Spectral Bolt -->
-	<distance id="29058" breakchance="30" unproperly="1" level="150" />	<!-- Assassin Star -->
+	<distance id="29058" breakchance="30" unproperly="1" level="150" />	<!-- Royal Star -->
 </weapons>

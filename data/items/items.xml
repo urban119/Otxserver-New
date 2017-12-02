@@ -36172,47 +36172,47 @@
 	<item id="24643" article="a" name="dead dawnfire asura">
 		<attribute key="containerSize" value="15" />
 		<attribute key="decayTo" value="24645" />
-		<attribute key="duration" value="60" />
+		<attribute key="duration" value="10" />
 		<attribute key="corpseType" value="blood" />
 	</item>
 	<item id="24645" article="a" name="dead dawnfire asura">
 		<attribute key="containerSize" value="15" />
 		<attribute key="decayTo" value="24646" />
-		<attribute key="duration" value="60" />
+		<attribute key="duration" value="900" />
 		<attribute key="corpseType" value="blood" />
 	</item>
 	<item id="24646" article="a" name="dead dawnfire asura">
 		<attribute key="containerSize" value="15" />
 		<attribute key="decayTo" value="24647" />
-		<attribute key="duration" value="60" />
+		<attribute key="duration" value="600" />
 		<attribute key="corpseType" value="blood" />
 	</item>
 	<item id="24647" article="a" name="dead dawnfire asura">
 		<attribute key="decayTo" value="0" />
-		<attribute key="duration" value="60" />
+		<attribute key="duration" value="600" />
 		<attribute key="corpseType" value="blood" />
 	</item>
 	<item id="24644" article="a" name="dead midnight asura">
 		<attribute key="containerSize" value="15" />
 		<attribute key="decayTo" value="24648" />
-		<attribute key="duration" value="60" />
+		<attribute key="duration" value="10" />
 		<attribute key="corpseType" value="blood" />
 	</item>
 	<item id="24648" article="a" name="dead midnight asura">
 		<attribute key="containerSize" value="15" />
 		<attribute key="decayTo" value="24649" />
-		<attribute key="duration" value="60" />
+		<attribute key="duration" value="900" />
 		<attribute key="corpseType" value="blood" />
 	</item>
 	<item id="24649" article="a" name="dead midnight asura">
 		<attribute key="containerSize" value="15" />
 		<attribute key="decayTo" value="24650" />
-		<attribute key="duration" value="60" />
+		<attribute key="duration" value="600" />
 		<attribute key="corpseType" value="blood" />
 	</item>
 	<item id="24650" article="a" name="dead midnight asura">
 		<attribute key="decayTo" value="0" />
-		<attribute key="duration" value="60" />
+		<attribute key="duration" value="600" />
 		<attribute key="corpseType" value="blood" />
 	</item>
 	<item id="24745" article="a" name="dead feroxa">
