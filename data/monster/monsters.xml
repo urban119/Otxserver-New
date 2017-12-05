@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <monsters>
+	<!-- Trainers -->
+    <monster name="Training Monk" file="Customs/Training Monk.xml" />
+
 	<!-- Nostalgia -->
 	<monster name="BearOld" file="Nostalgia/old_bear.xml" />
 	<monster name="BonelordOld" file="Nostalgia/old_bonelord.xml" />
