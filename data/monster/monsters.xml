@@ -462,6 +462,7 @@
 	<monster name="Sulphur Scuttler" file="Bosses/sulphur scuttler.xml" />
 	<monster name="Tanjis" file="Bosses/tanjis.xml" />
 	<monster name="Terofar" file="Bosses/terofar.xml" />
+	<monster name="Teleskor" file="Bosses/teleskor.xml" />
 	<monster name="The Abomination" file="Bosses/the_abomination.xml" />
 	<monster name="The Axeorcist" file="Bosses/the_axeorcist.xml" />
 	<monster name="The Blightfather" file="Bosses/the_blightfather.xml" />
