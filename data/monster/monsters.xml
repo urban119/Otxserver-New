@@ -409,6 +409,7 @@
 	<monster name="Heoni" file="Bosses/heoni.xml" />
 	<monster name="Hide" file="Bosses/hide.xml" />
 	<monster name="Hirintror" file="Bosses/hirintror.xml" />
+	<monster name="Horadron" file="Bosses/horadron.xml" />
 	<monster name="Horestis" file="Bosses/horestis.xml" />
 	<monster name="Incineron" file="Bosses/incineron.xml" />
 	<monster name="Infernatil" file="Bosses/infernatil.xml" />
@@ -442,6 +443,7 @@
 	<monster name="Obujos" file="Bosses/obujos.xml" />
 	<monster name="Orshabaal" file="Bosses/orshabaal.xml" />
 	<monster name="Paiz the Pauperizer" file="Bosses/paiz the pauperizer.xml" />
+	<monster name="Prince Drazzak" file="Bosses/prince_drazzak.xml" />
 	<monster name="Pythius The Rotten" file="Bosses/pythius_the_rotten.xml" />
 	<monster name="Raging Mage" file="Bosses/raging_mage.xml" />
 	<monster name="Ribstride" file="Bosses/ribstride.xml" />
