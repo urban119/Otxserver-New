@@ -33,14 +33,11 @@ local function creatureSayCallback(cid, type, msg)
 		npcHandler.topic[cid] = 0
 	end
 
-	if msgcontains(msg, "broken amulet") then
+	if msgcontains(msg, "amulet") then
 		if player:getStorageValue(Storage.SweetyCyclops.AmuletStatus) < 1 then
 			npcHandler:say("Me can do unbroken but Big Ben want gold 5000 and Big Ben need a lil' time to make it unbroken. Yes or no??", cid)
 			npcHandler.topic[cid] = 9
---		elseif 	player:getStorageValue(Storage.SweetyCyclops.AmuletStatus) == 1 and player:getStorageValue(Storage.SweetyCyclops.AmuletTimer) > os.time() then
---			npcHandler:say("Lil' one must be patient!!!", cid)
---			npcHandler.topic[cid] = 0
-		elseif player:getStorageValue(Storage.SweetyCyclops.AmuletStatus) == 1 and player:getStorageValue(Storage.SweetyCyclops.AmuletTimer) <= os.time() then
+		elseif player:getStorageValue(Storage.SweetyCyclops.AmuletStatus) == 1 then
 			npcHandler:say("Ahh, lil' one wants amulet. Here! Have it! Mighty, mighty amulet lil' one has. Don't know what but mighty, mighty it is!!!", cid)
 			player:addItem(8266, 1)
 			player:setStorageValue(Storage.SweetyCyclops.AmuletStatus, 2)
@@ -115,7 +112,7 @@ local function creatureSayCallback(cid, type, msg)
 				player:removeItem(8264, 1)
 				player:removeItem(8265, 1)
 				player:removeMoney(5000)
-				player:setStorageValue(Storage.SweetyCyclops.AmuletTimer, os.time() + 86400)
+				player:setStorageValue(Storage.SweetyCyclops.AmuletTimer, os.time())
 				player:setStorageValue(Storage.SweetyCyclops.AmuletStatus, 1)
 				npcHandler:say("Well, well, I do that! Big Ben makes lil' amulet unbroken with big hammer in big hands! No worry! Come back after sun hits the horizon 24 times and ask me for amulet.", cid)
 				npcHandler.topic[cid] = 0
