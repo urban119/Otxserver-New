@@ -392,6 +392,7 @@
 	<monster name="Foreman Kneebiter" file="Bosses/foreman_kneebiter.xml" />
 	<monster name="Freegoiz" file="Bosses/freegoiz.xml" />
 	<monster name="Fury of the Emperor" file="Bosses/fury_of_the_emperor.xml" />
+	<monster name="Furyosa" file="Bosses/furyosa.xml" />
 	<monster name="Gaz'haragoth" file="Bosses/gaz'haragoth.xml" />
 	<monster name="General Murius" file="Bosses/general_murius.xml" />
 	<monster name="Ghazbaran" file="Bosses/ghazbaran.xml" />
