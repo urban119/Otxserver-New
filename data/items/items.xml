@@ -1702,7 +1702,7 @@
 	<item id="26409" name="Brass-Shod Chest">
 	</item>
 	<item id="26654" article="a" name="Heavy Old Tome">
-		<attribute key="weight" value="10" />
+		<attribute key="weight" value="1000" />
 	</item>
 	<item id="1715" name="chest of drawers">
 		<attribute key="rotateTo" value="1714" />
@@ -3364,7 +3364,7 @@
 		<attribute key="weight" value="60" />
 	</item>
 	<item id="24842" name="raw meat">
-		<attribute key="weight" value="60" />
+		<attribute key="weight" value="2800" />
 	</item>
 	<item id="25385" name="pair of hellflayer horns">
 		<attribute key="weight" value="60" />
@@ -9739,7 +9739,7 @@
 	<item id="4991" article="a" name="pirate flag" />
 	<item id="4992" article="a" name="dead butterfly">
 		<attribute key="weight" value="20" />
-		<attribute key="decayTo" value="0" />
+		<attribute key="decayTo" value="4313" />
 		<attribute key="duration" value="60" />
 	</item>
 	<item fromid="4993" toid="4994" article="a" name="dead butterfly">
@@ -36400,24 +36400,24 @@
 	<item id="25398" article="a" name="dead clomp">
 		<attribute key="containerSize" value="15" />
 		<attribute key="decayTo" value="25399" />
-		<attribute key="duration" value="60" />
+		<attribute key="duration" value="10" />
 		<attribute key="corpseType" value="blood" />
 	</item>
 	<item id="25399" article="a" name="dead clomp">
 		<attribute key="containerSize" value="15" />
 		<attribute key="decayTo" value="25400" />
-		<attribute key="duration" value="60" />
+		<attribute key="duration" value="900" />
 		<attribute key="corpseType" value="blood" />
 	</item>
 	<item id="25400" article="a" name="dead clomp">
 		<attribute key="containerSize" value="15" />
 		<attribute key="decayTo" value="25401" />
-		<attribute key="duration" value="60" />
+		<attribute key="duration" value="600" />
 		<attribute key="corpseType" value="blood" />
 	</item>
 	<item id="25401" article="a" name="dead clomp">
 		<attribute key="decayTo" value="0" />
-		<attribute key="duration" value="60" />
+		<attribute key="duration" value="600" />
 		<attribute key="corpseType" value="blood" />
 	</item>
 	<item id="24803" article="a" name="dead savage">

@@ -45,7 +45,7 @@ local function creatureSayCallback(cid, type, msg)
 		end
 	elseif(msgcontains(msg, "brooch")) then
 		if player:getStorageValue(Storage.ExplorerSociety.QuestLine) == 2 then
-			npcHandler:say("True dwarven pickaxes having to be maded by true weaponsmith! You wanting to get pickaxe for explorer society?", cid)
+			npcHandler:say("You got me brooch?", cid)
 			npcHandler.topic[cid] = 3
 		end
 	elseif(msgcontains(msg, "yes")) then

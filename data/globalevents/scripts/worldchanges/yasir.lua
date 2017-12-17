@@ -46,6 +46,7 @@ function onStartup()
 		math.randomseed(os.time())
 		if math.random(100) <= yasirChance then
 			local randTown = config[math.random(#config)]
+			print('>> Yasir: '.. randTown.mapName ..'. ')
 			iterateArea(
 				function(position)
 					local tile = Tile(position)
@@ -79,6 +80,8 @@ function onStartup()
 
 			Game.loadMap('data/world/yasir/' .. randTown.mapName .. '.otbm')
 			addEvent(spawnYasir, 5000, randTown.yasirPosition)
+		else
+			print('>> Yasir: not this time.')
 		end
 	end
 end
