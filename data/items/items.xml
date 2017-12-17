@@ -68,6 +68,7 @@
 		<attribute key="shootType" value="death" />
 		<attribute key="range" value="4" />
 		<attribute key="magiclevelpoints" value="2" />
+		<attribute key="imbuingSlots" value="2" />
 	</item>
 	<!-- Glooth Items -->
 	<item id="23514" article="a" name="glooth sandwich">
@@ -3060,6 +3061,20 @@
 		<attribute key="shootType" value="energy" />
 		<attribute key="range" value="3" />
 	</item>
+	<item id="23721" article="a" name="the chiller">
+		<attribute key="description" value="Surges of ice rush through the tip of this rod." />
+		<attribute key="weight" value="1500" />
+		<attribute key="weaponType" value="rod" />
+		<attribute key="shootType" value="ice" />
+		<attribute key="range" value="3" />
+	</item>
+	<item id="23719" article="a" name="the scorcher">
+		<attribute key="description" value="Surges of fire rush through the tip of this wand." />
+		<attribute key="weight" value="1500" />
+		<attribute key="weaponType" value="wand" />
+		<attribute key="shootType" value="fire" />
+		<attribute key="range" value="3" />
+	</item>
 	<item id="2190" article="a" name="wand of vortex">
 		<attribute key="description" value="Surges of energy rush through the tip of this wand." />
 		<attribute key="weight" value="1900" />
@@ -4444,6 +4459,7 @@
 		<attribute key="range" value="5" />
 		<attribute key="hitChance" value="4" />
 		<attribute key="attack" value="5" />
+		<attribute key="imbuingSlots" value="3" />
 	</item>
 	<item id="25421" article="a" name="ferumbras' staff (wand)">
 		<attribute key="description" value="It is made of platinum and emeralds and topped by a large F made of gold." />
@@ -5786,6 +5802,7 @@
 	<item id="2644" name="bunnyslippers">
 		<attribute key="weight" value="600" />
 		<attribute key="slotType" value="feet" />
+		<attribute key="showattributes" value="1" />
 	</item>
 	<item id="2645" name="steel boots">
 		<attribute key="weight" value="2900" />
@@ -14078,7 +14095,7 @@
 	<item id="29035"  article="an" name="leaf star">
 	<attribute key="weight" value="200" />
 		<attribute key="attack" value="48" />
-		<attribute key="maxHitChance" value="84" />
+		<attribute key="maxHitChance" value="86" />
 		<attribute key="weaponType" value="distance" />
 		<attribute key="shootType" value="greenstar" />
 		<attribute key="range" value="5" />
@@ -34791,6 +34808,7 @@
 		<attribute key="attack" value="48" />
 		<attribute key="weaponType" value="sword" />
 		<attribute key="extradef" value="1" />
+		<attribute key="imbuingSlots" value="1" />
 	</item>
 	<item id="22399" article="a" name="umbral blade">
 		<attribute key="weight" value="5900" />
@@ -34798,6 +34816,7 @@
 		<attribute key="attack" value="50" />
 		<attribute key="weaponType" value="sword" />
 		<attribute key="extradef" value="2" />
+		<attribute key="imbuingSlots" value="2" />
 	</item>
 	<item id="22400" article="a" name="umbral masterblade">
 		<attribute key="weight" value="5500" />
@@ -34806,6 +34825,7 @@
 		<attribute key="weaponType" value="sword" />
 		<attribute key="extradef" value="3" />
 		<attribute key="skillSword" value="1" />
+		<attribute key="imbuingSlots" value="3" />
 	</item>
 	<item id="22401" article="a" name="crude umbral slayer">
 		<attribute key="weight" value="10000" />
@@ -34813,6 +34833,7 @@
 		<attribute key="attack" value="51" />
 		<attribute key="weaponType" value="sword" />
 		<attribute key="slotType" value="two-handed" />
+		<attribute key="imbuingSlots" value="1" />
 	</item>
 	<item id="22402" article="a" name="umbral slayer">
 		<attribute key="weight" value="9500" />
@@ -34820,6 +34841,7 @@
 		<attribute key="attack" value="52" />
 		<attribute key="weaponType" value="sword" />
 		<attribute key="slotType" value="two-handed" />
+		<attribute key="imbuingSlots" value="2" />
 	</item>
 	<item id="22403" article="a" name="umbral master slayer">
 		<attribute key="weight" value="9000" />
@@ -34828,6 +34850,7 @@
 		<attribute key="weaponType" value="sword" />
 		<attribute key="skillSword" value="3" />
 		<attribute key="slotType" value="two-handed" />
+		<attribute key="imbuingSlots" value="3" />
 	</item>
 	<item id="22404" article="a" name="crude umbral axe">
 		<attribute key="weight" value="9000" />
@@ -34835,6 +34858,7 @@
 		<attribute key="attack" value="49" />
 		<attribute key="weaponType" value="axe" />
 		<attribute key="extradef" value="1" />
+		<attribute key="imbuingSlots" value="1" />
 	</item>
 	<item id="22405" article="a" name="umbral axe">
 		<attribute key="weight" value="8500" />
@@ -34842,6 +34866,7 @@
 		<attribute key="attack" value="51" />
 		<attribute key="weaponType" value="axe" />
 		<attribute key="extradef" value="2" />
+		<attribute key="imbuingSlots" value="2" />
 	</item>
 	<item id="22406" article="a" name="umbral master axe">
 		<attribute key="weight" value="8000" />
@@ -34850,6 +34875,7 @@
 		<attribute key="weaponType" value="axe" />
 		<attribute key="extradef" value="3" />
 		<attribute key="skillAxe" value="1" />
+		<attribute key="imbuingSlots" value="3" />
 	</item>
 	<item id="22407" article="a" name="crude umbral chopper">
 		<attribute key="weight" value="12000" />
@@ -34857,6 +34883,7 @@
 		<attribute key="attack" value="51" />
 		<attribute key="weaponType" value="axe" />
 		<attribute key="slotType" value="two-handed" />
+		<attribute key="imbuingSlots" value="1" />
 	</item>
 	<item id="22408" article="a" name="umbral chopper">
 		<attribute key="weight" value="11500" />
@@ -34864,6 +34891,7 @@
 		<attribute key="attack" value="52" />
 		<attribute key="weaponType" value="axe" />
 		<attribute key="slotType" value="two-handed" />
+		<attribute key="imbuingSlots" value="2" />
 	</item>
 	<item id="22409" article="a" name="umbral master chopper">
 		<attribute key="weight" value="11000" />
@@ -34872,6 +34900,7 @@
 		<attribute key="weaponType" value="axe" />
 		<attribute key="skillAxe" value="3" />
 		<attribute key="slotType" value="two-handed" />
+		<attribute key="imbuingSlots" value="3" />
 	</item>
 	<item id="22410" article="a" name="crude umbral mace">
 		<attribute key="weight" value="9000" />
@@ -34879,6 +34908,7 @@
 		<attribute key="attack" value="48" />
 		<attribute key="weaponType" value="club" />
 		<attribute key="extradef" value="1" />
+		<attribute key="imbuingSlots" value="1" />
 	</item>
 	<item id="22411" article="a" name="umbral mace">
 		<attribute key="weight" value="8500" />
@@ -34886,6 +34916,7 @@
 		<attribute key="attack" value="50" />
 		<attribute key="weaponType" value="club" />
 		<attribute key="extradef" value="2" />
+		<attribute key="imbuingSlots" value="2" />
 	</item>
 	<item id="22412" article="a" name="umbral master mace">
 		<attribute key="weight" value="8000" />
@@ -34894,6 +34925,7 @@
 		<attribute key="weaponType" value="club" />
 		<attribute key="extradef" value="3" />
 		<attribute key="skillClub" value="1" />
+		<attribute key="imbuingSlots" value="3" />
 	</item>
 	<item id="22413" article="a" name="crude umbral hammer">
 		<attribute key="weight" value="17000" />
@@ -34901,6 +34933,7 @@
 		<attribute key="attack" value="51" />
 		<attribute key="weaponType" value="club" />
 		<attribute key="slotType" value="two-handed" />
+		<attribute key="imbuingSlots" value="1" />
 	</item>
 	<item id="22414" article="a" name="umbral hammer">
 		<attribute key="weight" value="16500" />
@@ -34908,6 +34941,7 @@
 		<attribute key="attack" value="53" />
 		<attribute key="weaponType" value="club" />
 		<attribute key="slotType" value="two-handed" />
+		<attribute key="imbuingSlots" value="2" />
 	</item>
 	<item id="22415" article="a" name="umbral master hammer">
 		<attribute key="weight" value="16000" />
@@ -34916,6 +34950,7 @@
 		<attribute key="weaponType" value="club" />
 		<attribute key="skillClub" value="3" />
 		<attribute key="slotType" value="two-handed" />
+		<attribute key="imbuingSlots" value="3" />
 	</item>
 	<item id="22416" article="a" name="crude umbral bow">
 		<attribute key="weight" value="5000" />
@@ -34925,6 +34960,7 @@
 		<attribute key="range" value="7" />
 		<attribute key="attack" value="2" />
 		<attribute key="hitChance" value="5" />
+		<attribute key="imbuingSlots" value="1" />
 	</item>
 	<item id="22417" article="a" name="umbral bow">
 		<attribute key="weight" value="4500" />
@@ -34934,6 +34970,7 @@
 		<attribute key="range" value="7" />
 		<attribute key="attack" value="4" />
 		<attribute key="hitChance" value="5" />
+		<attribute key="imbuingSlots" value="2" />
 	</item>
 	<item id="22418" article="a" name="umbral master bow">
 		<attribute key="weight" value="4000" />
@@ -34944,6 +34981,7 @@
 		<attribute key="attack" value="6" />
 		<attribute key="skillDist" value="3" />
 		<attribute key="hitChance" value="5" />
+		<attribute key="imbuingSlots" value="3" />
 	</item>
 	<item id="22419" article="a" name="crude umbral crossbow">
 		<attribute key="weight" value="13000" />
@@ -34953,6 +34991,7 @@
 		<attribute key="range" value="5" />
 		<attribute key="hitChance" value="1" />
 		<attribute key="attack" value="3" />
+		<attribute key="imbuingSlots" value="1" />
 	</item>
 	<item id="22420" article="a" name="umbral crossbow">
 		<attribute key="weight" value="12500" />
@@ -34962,6 +35001,7 @@
 		<attribute key="range" value="5" />
 		<attribute key="hitChance" value="2" />
 		<attribute key="attack" value="6" />
+		<attribute key="imbuingSlots" value="2" />
 	</item>
 	<item id="22421" article="a" name="umbral master crossbow">
 		<attribute key="weight" value="12000" />
@@ -34972,6 +35012,7 @@
 		<attribute key="hitChance" value="4" />
 		<attribute key="skillDist" value="3" />
 		<attribute key="attack" value="9" />
+		<attribute key="imbuingSlots" value="3" />
 	</item>
 	<item id="22422" article="a" name="crude umbral spellbook">
 		<attribute key="weight" value="4000" />
@@ -34982,6 +35023,7 @@
 		<attribute key="absorbPercentEnergy" value="2" />
 		<attribute key="defense" value="14" />
 		<attribute key="weaponType" value="shield" />
+		<attribute key="imbuingSlots" value="1" />
 	</item>
 	<item id="22423" article="a" name="umbral spellbook">
 		<attribute key="weight" value="3500" />
@@ -34992,6 +35034,7 @@
 		<attribute key="absorbPercentEnergy" value="3" />
 		<attribute key="defense" value="16" />
 		<attribute key="weaponType" value="shield" />
+		<attribute key="imbuingSlots" value="2" />
 	</item>
 	<item id="22424" article="a" name="umbral master spellbook">
 		<attribute key="weight" value="3000" />
@@ -35002,6 +35045,7 @@
 		<attribute key="absorbPercentEnergy" value="5" />
 		<attribute key="defense" value="20" />
 		<attribute key="weaponType" value="shield" />
+		<attribute key="imbuingSlots" value="3" />
 	</item>
 	<item id="22444" article="a" name="bad dream" />
 	<item id="22458" article="a" name="ramp">
