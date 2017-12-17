@@ -453,7 +453,6 @@ Storage = {
 		Obelisk02 = 12222,
 		Obelisk03 = 12223,
 		Obelisk04 = 12224,
-		SulphurLavaTimer = 12225,
 		yakchalDoor = 7814
 	},
 	TheWayToYalahar = {
