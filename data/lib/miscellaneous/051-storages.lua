@@ -11,11 +11,14 @@ Storage = {
 		QuestLine = 90,
 		bansheeDoor = 91,
 		bonelordsDoor = 92,
-		calassaDoor = 93,
+		CalassaQuest = 93,
 		edronDoor = 94,
 		elvenDoor = 95,
 		orcDoor = 96,
-		urnDoor = 97
+		urnDoor = 97,
+		SpectralStone = 98,		-- = 1 - mission taken from Angus, = 2 - mission taken from Mortimer
+		skullofratha = 99,
+		giantsmithhammer = 100
 	},
 	TravellingTrader = {
 		Mission01 = 101,

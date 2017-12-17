@@ -558,7 +558,7 @@ function onUseCrowbar(player, item, fromPosition, target, toPosition, isHotkey)
 	-- In Service Of Yalahar Quest
 	if targetUniqueId == 3071 then
 		if player:getStorageValue(Storage.InServiceofYalahar.SewerPipe01) < 1 then
-			doSetMonsterOutfit(player, 'skeleton', 3 * 1000)
+--			doSetMonsterOutfit(player, 'skeleton', 3 * 1000)
 			fromPosition:sendMagicEffect(CONST_ME_ENERGYHIT)
 			player:setStorageValue(Storage.InServiceofYalahar.SewerPipe01, 1)
 			player:setStorageValue(Storage.InServiceofYalahar.Mission01, player:getStorageValue(Storage.InServiceofYalahar.Mission01) + 1) -- StorageValue for Questlog 'Mission 01: Something Rotten'
@@ -596,7 +596,7 @@ function onUseCrowbar(player, item, fromPosition, target, toPosition, isHotkey)
 
 	elseif targetUniqueId == 3074 then
 		if player:getStorageValue(Storage.InServiceofYalahar.SewerPipe04) < 1 then
-			doSetMonsterOutfit(player, 'bog raider', 5 * 1000)
+--			doSetMonsterOutfit(player, 'bog raider', 5 * 1000)
 			player:say('You have used the crowbar on a knot.', TALKTYPE_MONSTER_SAY)
 			player:setStorageValue(Storage.InServiceofYalahar.SewerPipe04, 1)
 			player:setStorageValue(Storage.InServiceofYalahar.Mission01, player:getStorageValue(Storage.InServiceofYalahar.Mission01) + 1) -- StorageValue for Questlog 'Mission 01: Something Rotten'
@@ -647,7 +647,7 @@ function onUseSpoon(player, item, fromPosition, target, toPosition, isHotkey)
 	if targetId == 388 then
 		if player:getStorageValue(Storage.TheIceIslands.Questline) >= 21 then
 			if player:getStorageValue(Storage.TheIceIslands.SulphurLava) < 1 then
-				player:addItem(8301, 1)
+				player:addItem(7247, 1) -- fine sulphur
 				player:setStorageValue(Storage.TheIceIslands.SulphurLava, 1)
 				toPosition:sendMagicEffect(CONST_ME_MAGIC_RED)
 				player:say('You retrive a fine sulphur from a lava hole.', TALKTYPE_MONSTER_SAY)
@@ -665,14 +665,14 @@ function onUseSpoon(player, item, fromPosition, target, toPosition, isHotkey)
 		end
 
 	-- What a foolish Quest - Mission 8 (Sulphur)
-	elseif targetId == 8573 then
+	elseif targetId == 8573 or targetId == 388 then
 		if player:getStorageValue(Storage.WhatAFoolishQuest.Questline) ~= 21
 				or player:getStorageValue(Storage.WhatAFoolishQuest.InflammableSulphur) == 1 then
 			return false
 		end
 
 		player:setStorageValue(Storage.WhatAFoolishQuest.InflammableSulphur, 1)
-		player:addItem(8204, 1)
+		player:addItem(8204, 1) -- easily inflammable sulphur
 		toPosition:sendMagicEffect(CONST_ME_YELLOW_RINGS)
 	else
 		return false
