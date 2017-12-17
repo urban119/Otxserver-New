@@ -321,7 +321,7 @@ class Items
 
 		NameMap nameToItems;
 
-	private:
+	protected:
 		std::map<uint16_t, uint16_t> reverseItemMap;
 		std::vector<ItemType> items;
 };

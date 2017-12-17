@@ -38,9 +38,9 @@ class ProtocolOld final : public Protocol
 
 		explicit ProtocolOld(Connection_ptr connection) : Protocol(connection) {}
 
-		void onRecvFirstMessage(NetworkMessage& msg) override;
+		void onRecvFirstMessage(NetworkMessage& msg) final;
 
-	private:
+	protected:
 		void disconnectClient(const std::string& message);
 };
 

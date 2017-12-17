@@ -10,12 +10,23 @@ function onThink()		npcHandler:onThink()		end
 local voices = { {text = 'This weather is killing me. If I only had enough money to retire.'} }
 npcHandler:addModule(VoiceModule:new(voices))
 	
+local function greetCallback(cid)
+	local player = Player(cid)
+	if player:getStorageValue(Storage.SearoutesAroundYalahar.TownsCounter) == -1 then
+		npcHandler:setMessage(MESSAGE_GREET, 'Hello! Tell me what\'s on your mind. Time is money.')
+		player:setStorageValue(Storage.SearoutesAroundYalahar.TownsCounter, 0)
+	else
+		npcHandler:setMessage(MESSAGE_GREET, 'Hello! Tell me what\'s on your mind. Time is money.')
+	end
+	return true
+end	
+	
 local function creatureSayCallback(cid, type, msg)
 	if not npcHandler:isFocused(cid) then
 		return false
 	end
-
-local player = Player(cid)
+		
+local player = Player(cid)	
 	if msgcontains(msg, "passage") or msgcontains(msg, "sail") then
 		if player:getStorageValue(Storage.SearoutesAroundYalahar.TownsCounter) < 5 then
 			npcHandler:say({
@@ -276,8 +287,8 @@ keywordHandler:addKeyword({'captain'}, StdModule.say, {npcHandler = npcHandler, 
 keywordHandler:addKeyword({'name'}, StdModule.say, {npcHandler = npcHandler, text = 'I\'m Karith. I don\'t belong to a caste any longer, and only serve the Yalahari.'})
 keywordHandler:addKeyword({'yalahar'}, StdModule.say, {npcHandler = npcHandler, text = 'The city was a marvel to behold. It is certain that it have been the many foreigners that ruined it.'})
 
+npcHandler:setCallback(CALLBACK_GREET, greetCallback)
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
-npcHandler:setMessage(MESSAGE_GREET, "Hello! Tell me what's on your mind. Time is money.")
 npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye.")
 npcHandler:setMessage(MESSAGE_WALKAWAY, "Good bye.")
 

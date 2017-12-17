@@ -30,7 +30,7 @@ local config = {
 	[21452] =       {NAME = 'Gravedigger',      		        ID = 39,        TYPE = TYPE_MONSTER,    CHANCE = 40,    FAIL_MSG = { {1, "The gravedigger got scared and ran away."}, {3, "The gravedigger is trying to nibble."} }, SUCCESS_MSG = "You tamed the hellgrip."},
 	[20138]	=	{NAME = 'Water Buffalo',			ID = 35,	TYPE = TYPE_MONSTER,	CHANCE = 30,	FAIL_MSG = { {1, 'The water buffalo got scared and ran away.'}, {3, 'The water buffalo is trying to nibble.'} }, SUCCESS_MSG = 'You tamed a water buffalo.'},
 	[22608]	=	{NAME = 'Shock Head', 				ID = 42,	TYPE = TYPE_MONSTER,	CHANCE = 30,	FAIL_MSG = { {1, 'The shock head ran away.'}, {3, 'The shock head is growling at you.'} }, SUCCESS_MSG = 'You tamed the shock head.'},
-	[23557]	=	{NAME = 'Walker', 				ID = 44,	TYPE = TYPE_MONSTER,	CHANCE = 30,	FAIL_MSG = { {2, 'This walker is incompatible with your control unit.'}, {4, 'This walker is incompatible with your control unit.'} }, SUCCESS_MSG = 'You tamed the walker.'},
+	[23557]	=	{NAME = 'Walker', 				ID = 43,	TYPE = TYPE_MONSTER,	CHANCE = 30,	FAIL_MSG = { {2, 'This walker is incompatible with your control unit.'}, {4, 'This walker is incompatible with your control unit.'} }, SUCCESS_MSG = 'You tamed the walker.'},
 	[23810]	=	{NAME = 'Noble Lion', 				ID = 40,	TYPE = TYPE_MONSTER,	CHANCE = 30,	FAIL_MSG = { {2, 'The lion got scared and ran away.'}, {4, 'The lion is trying to nibble.'} }, SUCCESS_MSG = 'You tamed the lion.'}
 }
 

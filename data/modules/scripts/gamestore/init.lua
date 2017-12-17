@@ -295,18 +295,18 @@ function parseBuyStoreOffer(playerId, msg)
 			player:addPremiumDays(offer.thingId)
 		-- If offer is Stackable.
 		elseif offer.type == GameStore.OfferTypes.OFFER_TYPE_STACKABLE then
-			if player:getFreeCapacity() < ItemType(offer.thingId):getWeight(offer.count) then
+			local function isKegItem(itemId)
+				return itemId>=ITEM_KEG_START and itemId <= ITEM_KEG_END
+			end
+			if(isKegItem(offer.thingId)) and player:getFreeCapacity() < ItemType(offer.thingId):getWeight(1) then
+				return addPlayerEvent(sendStoreError, 250, playerId, GameStore.StoreErrors.STORE_ERROR_NETWORK, "Please make sure you have free capacity to hold this item.")
+			elseif player:getFreeCapacity() < ItemType(offer.thingId):getWeight(offer.count) then
 				return addPlayerEvent(sendStoreError, 250, playerId, GameStore.StoreErrors.STORE_ERROR_NETWORK, "Please make sure you have free capacity to hold this item.")
 			end
-
 			local inbox = player:getSlotItem(CONST_SLOT_STORE_INBOX)
 			if inbox and inbox:getEmptySlots() > 0 then
-				local function isKegItem(itemId)
-					return itemId >= ITEM_KEG_START and itemId <= ITEM_KEG_END
-				end
-
 				if(isKegItem(offer.thingId)) then
-					if(offer.count > 500) then
+					if(offer.count >= 500) then
 						local parcel = Item(inbox:addItem(2596, 1):getUniqueId())
 						local function changeParcel(parcel)
 							local packagename = ''.. offer.count..'x '.. offer.name ..' package.'

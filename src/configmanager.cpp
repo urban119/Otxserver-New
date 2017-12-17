@@ -37,7 +37,6 @@ std::string getGlobalString(lua_State* L, const char* identifier, const char* de
 {
 	lua_getglobal(L, identifier);
 	if (!lua_isstring(L, -1)) {
-		lua_pop(L, 1);
 		return defaultValue;
 	}
 
@@ -51,7 +50,6 @@ int32_t getGlobalNumber(lua_State* L, const char* identifier, const int32_t defa
 {
 	lua_getglobal(L, identifier);
 	if (!lua_isnumber(L, -1)) {
-		lua_pop(L, 1);
 		return defaultValue;
 	}
 
@@ -65,7 +63,6 @@ bool getGlobalBoolean(lua_State* L, const char* identifier, const bool defaultVa
 	lua_getglobal(L, identifier);
 	if (!lua_isboolean(L, -1)) {
 		if (!lua_isstring(L, -1)) {
-			lua_pop(L, 1);
 			return defaultValue;
 		}
 

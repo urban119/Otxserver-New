@@ -341,13 +341,28 @@ function onUsePick(player, item, fromPosition, target, toPosition, isHotkey)
 		target:decay()
 		toPosition:sendMagicEffect(CONST_ME_POFF)
 
-		--elseif targetId == 23759 then
-		--target:remove()
-		--toPosition:sendMagicEffect(CONST_ME_POFF)
-		--player:addItem(23760, 1)
-		--player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You picked a beautiful lion's mane flower.")
+		elseif targetId == 23759 then
+		target:remove()
+		toPosition:sendMagicEffect(CONST_ME_POFF)
+		player:addItem(23760, 1)
+		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You picked a beautiful lion's mane flower.")
 		
-		-- FIZ ESSE LIXO AQUI
+	-- shiny stone refining
+		elseif target.itemid == 11227 then 
+		local chance = math.random(1,100)
+
+		if chance == 1 then
+			player:addItem(2160, 1) -- 1% chance of getting crystal coin
+		elseif chance <= 6 then
+			player:addItem(2148, 1) -- 5% chance of getting gold coin
+		elseif chance <= 51 then
+			player:addItem(2152, 1) -- 45% chance of getting platinum coin
+		else
+			player:addItem(2145, 1) -- 49% chance of getting small diamond
+		end
+		target:getPosition():sendMagicEffect(CONST_ME_BLOCKHIT)
+		target:remove(1)
+
 		elseif targetId == 11227 then
 		target:remove(1)
 		toPosition:sendMagicEffect(CONST_ME_POFF)

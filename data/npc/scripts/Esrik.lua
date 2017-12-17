@@ -31,7 +31,7 @@ local function getTable(player)
 		{name="leather armor", id=2467, buy=35, sell=12},
 		{name="leather Boots", id=2643, buy=10, sell=2},
 		{name="leather helmet", id=2461, buy=12, sell=9},
-		{name="leather Legs", id=2649, buy=10, sell=22},
+		{name="leather legs", id=2649, buy=10, sell=9},
 		{name="Longsword", id=2397, buy=160, sell=51},
 		{name="mace", id=2398, buy=90, sell=30},
 		{name="Morning Star", id=2394, buy=430, sell=100},

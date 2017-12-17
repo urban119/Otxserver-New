@@ -176,9 +176,6 @@ theforgottenserver.exe
 vc14/theforgottenserver.VC.db
 data/world/global.otbm
 
-*.rar
-*.exe
-
 #Jetbrains' IDEs config files
 .idea/
 cmake-build-*/
