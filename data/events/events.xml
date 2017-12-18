@@ -43,5 +43,5 @@
 		-->
 	<event class="Monster" method="onSpawn" enabled="0" />
 	<event class="Player" method="onUseWeapon" enabled="1" />
-	<event class="Player" method="onCombatSpell" enabled="0" />
+	<event class="Player" method="onCombatSpell" enabled="1" />
 </events>

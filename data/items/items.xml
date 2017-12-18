@@ -3065,7 +3065,7 @@
 	<item id="23721" article="a" name="the chiller">
 		<attribute key="description" value="Surges of ice rush through the tip of this rod." />
 		<attribute key="weight" value="1500" />
-		<attribute key="weaponType" value="rod" />
+		<attribute key="weaponType" value="wand" />
 		<attribute key="shootType" value="ice" />
 		<attribute key="range" value="3" />
 	</item>
@@ -17619,7 +17619,7 @@
 	<item id="8843" article="an" name="onion">
 		<attribute key="weight" value="140" />
 	</item>
-	<item id="8844" article="a" name="jalape�o pepper">
+	<item id="8844" article="a" name="jalapeno pepper">
 		<attribute key="weight" value="30" />
 	</item>
 	<item id="8845" article="a" name="beetroot">
