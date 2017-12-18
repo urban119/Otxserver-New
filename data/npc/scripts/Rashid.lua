@@ -177,7 +177,7 @@ local function creatureSayCallback(cid, type, msg)
 			player:setStorageValue(Storage.TravellingTrader.Mission06, 1)
 			npcHandler.topic[cid] = 0
 		elseif(npcHandler.topic[cid] == 18) then
-			if player:removeItem(8766, 1) then
+			if player:removeItem(5929, 1) then
 				npcHandler:say("Thank you!! Ah, this makes my day! I'll take the rest of the day off to get to know this little guy. Come see me tomorrow, if you like.", cid)
 				player:setStorageValue(Storage.TravellingTrader.Mission06, 2)
 				npcHandler.topic[cid] = 0

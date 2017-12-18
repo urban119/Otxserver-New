@@ -26,8 +26,8 @@
     <globalevent name="Effect" interval="3000" script="FerumbrasAscedantQuest/effect.lua"/>
     <globalevent name="Effcts" interval="4000" script="FerumbrasAscedantQuest/effects.lua"/>
 
-	<!-- Blooming Griffinclaw 
-	<globalevent name="GriffinclawFlower" type="startup" script="others/griffinclawFlower.lua" />-->
+	<!-- Blooming Griffinclaw -->
+	<globalevent name="GriffinclawFlower" type="startup" script="others/griffinclawFlower.lua" />
 
 	<!-- Demon Oak Quest -->
 	<globalevent name="DemonOakVoices" interval="15000" script="demon oak quest/voices.lua" />
@@ -43,7 +43,7 @@
 	<globalevent type="record" name="PlayerRecord" script="record.lua" />
 	<globalevent name="ServerSave" time="05:55:00" script="serversave.lua" />	
 	<globalevent type="startup" name="rashid" script="rashid.lua"/>
-	<globalevent type="startup" name="yasir" script="worldchanges/yasir.lua"/>
+	<globalevent type="startup" name="yasir" script="worldchanges/yasir.lua"/>	
 	<!-- raid --> 
 	<globalevent name="SpawnRaid" interval="60000" script="spawn/raids.lua"/>
 

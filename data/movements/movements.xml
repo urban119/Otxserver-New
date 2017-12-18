@@ -144,6 +144,8 @@
 
 	<!-- Explorer Society (Calassa) -->
 	<movevent event="StepIn" actionid="2070" script="others/calassa.lua" />
+	<movevent event="StepIn" fromaid="14171" toaid="14172" script="quests/explorer society/carvingTPphnp.lua" /> <!-- tp Port Hope - Northport -->
+	<movevent event="StepIn" fromaid="14173" toaid="14174" script="quests/explorer society/carvingTPlbsv.lua" /> <!-- tp Liberty Bay - Svargrond -->
 
 	<!-- Formorgar Mines Hoist -->
 	<movevent event="StepIn" fromuid="3059" touid="3061" script="others/hoist.lua" />

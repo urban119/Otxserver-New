@@ -86,7 +86,7 @@ local config = {
 
 		-- Vampires
 		[2956] = {value = 25000, newItem = 5905, after = 2957}, -- vampire
---#		[6006] = {value = 25000, newItem = 5905, after = 9658}, -- vampire, after being killed	
+--#		[6006] = {value = 25000, newItem = 5905, after = 2957}, -- vampire, after being killed	
 		[9654] = {value = 25000, newItem = 5905, after = 9658}, -- vampire bride
 --#		[9660] = {value = 25000, newItem = 5905, after = 9658}, -- vampire bride, after being killed
 --#		[8937] = {value = 25000, newItem = 5905, after = 8939},	 -- vampire lord, after being killed (the count, diblis, etc)	

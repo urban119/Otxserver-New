@@ -581,14 +581,23 @@
 	<action itemid="5938" script="quests/druid outfit/waterskin.lua" />
 
 	<!-- Explorer Society Quest -->
-	<action uniqueid="3152" script="flor.lua" />
 	<action itemid="4869" script="quests/explorer society/botanist.lua" />
 	<action itemid="4865" script="quests/explorer society/butterfly.lua" />
 	<action uniqueid="3017" script="quests/explorer society/dragon.lua" />
 	<action itemid="4856" script="quests/explorer society/icicle.lua" />
-	<action itemid="7281" script="quests/explorer society/resonance.lua" />
-	<action itemid="7242" script="quests/explorer society/stone.lua" />
-
+	<action itemid="7242" script="quests/explorer society/resonance.lua" />
+	<action itemid="4851" script="quests/explorer society/stone.lua" />
+	<action itemid="4853" script="quests/explorer society/tracingpaper.lua" />
+	<action actionid="1098" script="quests/explorer society/dwacatradoor.lua" />
+	<action actionid="1097" script="quests/explorer society/chorurndoor.lua" />
+	<action actionid="1092" script="quests/explorer society/bonelordsdoor.lua" />
+	<action actionid="1096" script="quests/explorer society/orcpowderdoor.lua" />
+	<action actionid="1094" script="quests/explorer society/edrondoor.lua" />
+	<action actionid="1095" script="quests/explorer society/hellgatedoor.lua" />
+	<action actionid="1091" script="quests/explorer society/bansheedoor.lua" />
+	<action actionid="1093" script="quests/explorer society/calassadoor.lua" />
+	<action actionid="32700" script="quests/explorer society/carvingTPdoor.lua" />
+	
 	<!-- Green Djinn Quest -->
 	<action actionid="5390" script="quests/green djinn/tear.lua" />
 
