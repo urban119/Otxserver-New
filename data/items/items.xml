@@ -2987,6 +2987,7 @@
 		<attribute key="weight" value="1800" />
 		<attribute key="defense" value="14" />
 		<attribute key="weaponType" value="shield" />
+		<attribute key="imbuingSlots" value="1" />
 	</item>
 	<item id="2176" article="an" name="orb">
 		<attribute key="weight" value="800" />
@@ -3088,7 +3089,7 @@
 		<attribute key="weaponType" value="wand" />
 		<attribute key="shootType" value="fire" />
 		<attribute key="range" value="3" />
-		<attribute key="imbuingSlots" value="1" />
+		<attribute key="imbuingSlots" value="2" />
 	</item>
 	<item id="2192" article="a" name="crystal ball">
 		<attribute key="weight" value="3400" />
@@ -4130,6 +4131,7 @@
 		<attribute key="attack" value="45" />
 		<attribute key="weaponType" value="club" />
 		<attribute key="slotType" value="two-handed" />
+		<attribute key="imbuingSlots" value="3" />
 	</item>
 	<item id="2392" article="a" name="fire sword">
 		<attribute key="description" value="The blade is a magic flame." />
@@ -4361,6 +4363,7 @@
 		<attribute key="attack" value="28" />
 		<attribute key="weaponType" value="club" />
 		<attribute key="extradef" value="1" />
+		<attribute key="imbuingSlots" value="2" />
 	</item>
 	<item id="2424" article="a" name="silver mace">
 		<attribute key="description" value="You feel an aura of protection." />
@@ -4406,6 +4409,7 @@
 		<attribute key="attack" value="28" />
 		<attribute key="weaponType" value="axe" />
 		<attribute key="extradef" value="1" />
+		<attribute key="imbuingSlots" value="2" />
 	</item>
 	<item id="2430" article="a" name="knight axe">
 		<attribute key="weight" value="5900" />
@@ -4413,6 +4417,7 @@
 		<attribute key="attack" value="33" />
 		<attribute key="weaponType" value="axe" />
 		<attribute key="extradef" value="1" />
+		<attribute key="imbuingSlots" value="2" />
 	</item>
 	<item id="2431" article="a" name="stonecutter axe">
 		<attribute key="description" value="You feel the power of this mighty axe." />
@@ -4496,6 +4501,7 @@
 		<attribute key="attack" value="48" />
 		<attribute key="weaponType" value="club" />
 		<attribute key="slotType" value="two-handed" />
+		<attribute key="imbuingSlots" value="3" />
 	</item>
 	<item id="25418" article="a" name="maimer">
 		<attribute key="weight" value="9700" />
@@ -4612,6 +4618,7 @@
 		<attribute key="attack" value="38" />
 		<attribute key="extradef" value="1" />
 		<attribute key="weaponType" value="club" />
+		<attribute key="imbuingSlots" value="2" />
 	</item>
 	<item id="2446" article="a" name="pharaoh sword">
 		<attribute key="weight" value="5200" />
@@ -4717,6 +4724,7 @@
 		<attribute key="weight" value="4200" />
 		<attribute key="armor" value="2" />
 		<attribute key="slotType" value="head" />
+		<attribute key="imbuingSlots" value="1" />
 	</item>
 	<item id="2459" article="an" name="iron helmet">
 		<attribute key="weight" value="3000" />
@@ -4978,6 +4986,7 @@
 		<attribute key="weight" value="9000" />
 		<attribute key="armor" value="9" />
 		<attribute key="slotType" value="body" />
+		<attribute key="imbuingSlots" value="3" />
 	</item>
 	<item id="2506" article="a" name="dragon scale helmet">
 		<attribute key="weight" value="3250" />
@@ -5119,6 +5128,7 @@
 		<attribute key="weight" value="8200" />
 		<attribute key="defense" value="32" />
 		<attribute key="weaponType" value="shield" />
+		<attribute key="imbuingSlots" value="1" />
 	</item>
 	<item id="2529" article="a" name="black shield">
 		<attribute key="description" value="An unholy creature covers the shield." />
@@ -5802,7 +5812,6 @@
 	<item id="2644" name="bunnyslippers">
 		<attribute key="weight" value="600" />
 		<attribute key="slotType" value="feet" />
-		<attribute key="showattributes" value="1" />
 	</item>
 	<item id="2645" name="steel boots">
 		<attribute key="weight" value="2900" />
@@ -8846,6 +8855,7 @@
 		<attribute key="weaponType" value="axe" />
 		<attribute key="imbuingSlots" value="2" />
 		<attribute key="extradef" value="1" />
+		<attribute key="imbuingSlots" value="2" />
 	</item>
 	<item id="3963" article="a" name="templar scytheblade">
 		<attribute key="weight" value="2900" />
@@ -14095,7 +14105,7 @@
 	<item id="29035"  article="an" name="leaf star">
 	<attribute key="weight" value="200" />
 		<attribute key="attack" value="48" />
-		<attribute key="maxHitChance" value="86" />
+		<attribute key="maxHitChance" value="84" />
 		<attribute key="weaponType" value="distance" />
 		<attribute key="shootType" value="greenstar" />
 		<attribute key="range" value="5" />
@@ -14155,6 +14165,7 @@
 		<attribute key="attack" value="42" />
 		<attribute key="slotType" value="two-handed" />
 		<attribute key="weaponType" value="axe" />
+		<attribute key="imbuingSlots" value="3" />
 	</item>
 	<item id="7381" article="a" name="mammoth whopper">
 		<attribute key="description" value="Made from a mammoth's legbones, it is one of the favoured weapons among barbarians." />
@@ -14177,6 +14188,7 @@
 		<attribute key="attack" value="42" />
 		<attribute key="weaponType" value="sword" />
 		<attribute key="extradef" value="1" />
+		<attribute key="imbuingSlots" value="2" />
 	</item>
 	<item id="7384" article="a" name="mystic blade">
 		<attribute key="description" value="This sword is only granted to a scrapper of the Svargrond arena." />
@@ -14185,6 +14197,7 @@
 		<attribute key="attack" value="44" />
 		<attribute key="weaponType" value="sword" />
 		<attribute key="extradef" value="2" />
+		<attribute key="imbuingSlots" value="2" />
 	</item>
 	<item id="7385" article="a" name="crimson sword">
 		<attribute key="description" value="Its blade is very notchy." />
@@ -14222,6 +14235,7 @@
 		<attribute key="weaponType" value="axe" />
 		<attribute key="extradef" value="1" />
 		<attribute key="description" value="This axe is only granted to a scrapper of the Svargrond arena." />
+		<attribute key="imbuingSlots" value="2" />
 	</item>
 	<item id="7390" name="the justice seeker">
 		<attribute key="weight" value="5000" />
@@ -14246,6 +14260,7 @@
 		<attribute key="weaponType" value="club" />
 		<attribute key="slotType" value="two-handed" />
 		<attribute key="description" value="This club is only granted to a greenhorn of the Svargrond arena." />
+		<attribute key="imbuingSlots" value="2" />
 	</item>
 	<item id="7393" article="a" name="demon trophy">
 		<attribute key="weight" value="500" />
@@ -14280,6 +14295,7 @@
 		<attribute key="attack" value="44" />
 		<attribute key="weaponType" value="sword" />
 		<attribute key="slotType" value="two-handed" />
+		<attribute key="imbuingSlots" value="3" />
 	</item>
 	<item id="7403" article="a" name="berserker">
 		<attribute key="weight" value="13000" />
@@ -14312,6 +14328,7 @@
 		<attribute key="attack" value="42" />
 		<attribute key="weaponType" value="sword" />
 		<attribute key="slotType" value="two-handed" />
+		<attribute key="imbuingSlots" value="3" />
 	</item>
 	<item id="7407" article="a" name="haunted blade">
 		<attribute key="weight" value="3100" />
@@ -14381,6 +14398,7 @@
 		<attribute key="attack" value="44" />
 		<attribute key="weaponType" value="club" />
 		<attribute key="extradef" value="-2" />
+		<attribute key="imbuingSlots" value="2" />
 	</item>
 	<item id="7416" article="a" name="bloody edge">
 		<attribute key="weight" value="5200" />
@@ -14538,6 +14556,7 @@
 		<attribute key="attack" value="47" />
 		<attribute key="weaponType" value="club" />
 		<attribute key="extradef" value="3" />
+		<attribute key="imbuingSlots" value="2" />
 	</item>
 	<item id="7430" article="a" name="dragonbone staff">
 		<attribute key="description" value="Small flames are dancing around this strange weapon." />
@@ -17600,7 +17619,7 @@
 	<item id="8843" article="an" name="onion">
 		<attribute key="weight" value="140" />
 	</item>
-	<item id="8844" article="a" name="jalapeño pepper">
+	<item id="8844" article="a" name="jalapeï¿½o pepper">
 		<attribute key="weight" value="30" />
 	</item>
 	<item id="8845" article="a" name="beetroot">
@@ -17681,6 +17700,7 @@
 		<attribute key="range" value="6" />
 		<attribute key="hitChance" value="2" />
 		<attribute key="attack" value="3" />
+		<attribute key="imbuingSlots" value="3" />
 	</item>
 	<item id="8856" name="Yol's bow">
 		<attribute key="weight" value="3500" />
@@ -18006,7 +18026,7 @@
 		<attribute key="weaponType" value="wand" />
 		<attribute key="shootType" value="death" />
 		<attribute key="range" value="3" />
-		<attribute key="imbuingSlots" value="1" />
+		<attribute key="imbuingSlots" value="2" />
 	</item>
 	<item id="8911" article="a" name="northwind rod">
 		<attribute key="description" value="It was made by one of the shamans in Svargrond and symbolises an icy mammoth." />
@@ -18014,7 +18034,7 @@
 		<attribute key="weaponType" value="wand" />
 		<attribute key="shootType" value="ice" />
 		<attribute key="range" value="3" />
-		<attribute key="imbuingSlots" value="1" />
+		<attribute key="imbuingSlots" value="2" />
 	</item>
 	<item id="8912" article="a" name="springsprout rod">
 		<attribute key="description" value="It is filled with the energy of growing plants." />
@@ -18040,7 +18060,7 @@
 		<attribute key="weaponType" value="wand" />
 		<attribute key="shootType" value="energy" />
 		<attribute key="range" value="3" />
-		<attribute key="imbuingSlots" value="1" />
+		<attribute key="imbuingSlots" value="2" />
 	</item>
 	<item id="8921" article="a" name="wand of draconia">
 		<attribute key="description" value="This wand holds the spirit and soul of a dragon lord." />
@@ -18048,7 +18068,7 @@
 		<attribute key="weaponType" value="wand" />
 		<attribute key="shootType" value="fire" />
 		<attribute key="range" value="3" />
-		<attribute key="imbuingSlots" value="1" />
+		<attribute key="imbuingSlots" value="2" />
 	</item>
 	<item id="8922" article="a" name="wand of voodoo">
 		<attribute key="description" value="It is filled with the dark hatred and rage of a tormented demonic being." />
@@ -18056,7 +18076,7 @@
 		<attribute key="weaponType" value="wand" />
 		<attribute key="shootType" value="death" />
 		<attribute key="range" value="3" />
-		<attribute key="imbuingSlots" value="1" />
+		<attribute key="imbuingSlots" value="2" />
 	</item>
 	<item id="8923" name="ranger legs">
 		<attribute key="weight" value="3500" />
@@ -18101,6 +18121,7 @@
 		<attribute key="weaponType" value="club" />
 		<attribute key="imbuingSlots" value="1" />
 		<attribute key="extradef" value="2" />
+		<attribute key="imbuingSlots" value="1" />
 	</item>
 	<item id="8929" name="the stomper">
 		<attribute key="weight" value="11500" />
@@ -19793,7 +19814,7 @@
 		<attribute key="description" value="This one would be quite healthy if it wasn't for all the melted cheese on top." />
 		<attribute key="weight" value="1100" />
 	</item>
-	<item id="9998" article="a" name="filled jalapeño peppers">
+	<item id="9998" article="a" name="filled jalapeï¿½o peppers">
 		<attribute key="description" value="The creamy cheese makes a great combination with the spicy peppers." />
 		<attribute key="weight" value="650" />
 	</item>
@@ -20677,7 +20698,6 @@
 		<attribute key="duration" value="300" />
 		<attribute key="armor" value="1" />
 		<attribute key="slotType" value="body" />
-		<attribute key="imbuingSlots" value="2" />
 	</item>
 	<item id="10364" name="the shield Nevermourn">
 		<attribute key="description" value="It is said that the wearer of Nevermourn will never mourn. What a powerful shield." />
@@ -21971,6 +21991,7 @@
 		<attribute key="attack" value="47" />
 		<attribute key="weaponType" value="axe" />
 		<attribute key="slotType" value="two-handed" />
+		<attribute key="imbuingSlots" value="3" />
 	</item>
 	<item id="11306" article="a" name="sai">
 		<attribute key="weight" value="5000" />
@@ -21985,6 +22006,7 @@
 		<attribute key="attack" value="43" />
 		<attribute key="weaponType" value="sword" />
 		<attribute key="extradef" value="2" />
+		<attribute key="imbuingSlots" value="2" />
 	</item>
 	<item id="11308" article="a" name="drachaku">
 		<attribute key="weight" value="6000" />
@@ -26021,6 +26043,7 @@
 		<attribute key="absorbPercentPhysical" value="5" />
 		<attribute key="showattributes" value="1" />
 		<attribute key="weaponType" value="shield" />
+		<attribute key="imbuingSlots" value="1" />
 	</item>
 	<item id="15414" article="an" name="ornate mace">
 		<attribute key="weight" value="14900" />
@@ -26226,6 +26249,7 @@
 		<attribute key="attack" value="46" />
 		<attribute key="defense" value="24" />
 		<attribute key="weaponType" value="axe" />
+		<attribute key="imbuingSlots" value="2" />
 	</item>
 	<item id="15497" article="a" name="dead deepling worker">
 		<attribute key="weight" value="6300" />
