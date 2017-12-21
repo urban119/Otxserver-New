@@ -2,6 +2,10 @@
 
 Servidor de Tibia mantido por Malucooo. O servidor usa como base OTX Server 3.10.
 
+# Quer ver o projeto crescer?
+Ajude-nos com doações para manter o desenvolvimento do projeto contínuo!
+Doe já! https://pag.ae/bcsr8Jr
+
 # Regras gerais:
 ## 1 -> Desenvolvimento
 ###### 1.1 -> Proibido reportar um BUG diretamente no Whatsapp sem ter aberto um issue relativo ao mesmo.
