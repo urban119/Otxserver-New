@@ -3600,7 +3600,7 @@ void Player::onTargetCreatureGainHealth(Creature* target, int32_t points)
 	if (target && party) {
 		Player* tmpPlayer = nullptr;
 
-		if (target->getPlayer()) {
+		if (isPartner(tmpPlayer) && (tmpPlayer != this)) {
 			tmpPlayer = target->getPlayer();
 		} else if (Creature* targetMaster = target->getMaster()) {
 			if (Player* targetMasterPlayer = targetMaster->getPlayer()) {
@@ -4003,7 +4003,7 @@ void Player::addUnjustifiedDead(const Player* attacked)
 	sendUnjustifiedPoints();
 }
 
-void Player::checkSkullTicks(int32_t ticks)
+void Player::checkSkullTicks(int64_t ticks)
 {
 	int64_t newTicks = skullTicks - ticks;
 	if (newTicks < 0) {
